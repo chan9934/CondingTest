@@ -1,0 +1,20 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-11720_\uC22B\uC790\uC758_\uD569",
+      "appliesTo": "BOJ/11720_\uC22B\uC790\uC758_\uD569.cpp",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-11720_\uC22B\uC790\uC758_\uD569",
+      "appliesTo": "BOJ/11720_\uC22B\uC790\uC758_\uD569.cpp",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-11720_\uC22B\uC790\uC758_\uD569",
+      "appliesTo": "BOJ/11720_\uC22B\uC790\uC758_\uD569.cpp",
+      "type": "launch"
+    }
+  ]
+}
