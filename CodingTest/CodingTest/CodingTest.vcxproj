@@ -130,7 +130,10 @@
     <ClCompile Include="..\BOJ\11720_숫자의_합.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Recursive.cpp" />
+    <ClCompile Include="Recursive.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="순열.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h" />
