@@ -133,7 +133,10 @@
     <ClCompile Include="Recursive.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="순열.cpp" />
+    <ClCompile Include="순열.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="순열_재귀함수.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h" />
