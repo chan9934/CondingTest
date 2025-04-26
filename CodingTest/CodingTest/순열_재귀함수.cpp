@@ -10,31 +10,28 @@
 #include <cstring>
 
 using namespace std;
+	
+int arr[] = { 1, 2, 3 };
+int n = 3;
+int r = 3;
 
-vector<int> V = { 1,2,3,4 };
-
-void Function(int n, int r, int depth)
+void Permutation(int n, int r, int d)
 {
-	if (r == depth)
+	if (r == d)
 	{
-		for (int i = 0; i < r; i++) {
-			cout << V[i] << " ";
+		for (int i = 0; i < r; ++i)
+		{
+			cout << arr[i] << " ";
 		}
-		cout << "\n";
+		cout << endl;
 
 		return;
 	}
 
-	for (int i = depth; i < n; ++i)
+	for (int i = d; i < n; ++i)
 	{
-		swap(V[i], V[depth]);
-		Function(n, r, depth + 1);
-		swap(V[i], V[depth]);
+		swap(arr[i], arr[d]);
+		Permutation(n, r, d + 1);
+		swap(arr[i], arr[d]);
 	}
-}
-
-int main()
-{
-	Function(4, 2, 0);
-
 }

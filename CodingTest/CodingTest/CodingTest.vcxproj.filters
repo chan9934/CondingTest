@@ -30,6 +30,9 @@
     <ClCompile Include="순열_재귀함수.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
+    <ClCompile Include="조합_재귀함수.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CodingTest.h">
