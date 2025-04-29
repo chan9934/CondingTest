@@ -1,21 +1,9 @@
-#pragma once
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <map>
-#include <set>
-#include <stack>
-#include <queue>
-#include <cstring>
-
-using namespace std;
-
+#include "CodingTest.h"
 int arr[] = { 1, 2, 3, 4, 5 };
 int n = 5;
 int r = 3;
 
-void Permutation()
+void Func_Permutation()
 {
 
 }
@@ -24,12 +12,8 @@ int main()
 
 	do
 	{
-		for (int i = 0; i < r; ++i)
-		{
-			cout << arr[i] << " ";
-		}
-		cout << 
-	} while (next_permutation(&arr[0], &arr[5]));
-
+		Permutation::Print(arr, r);
+	} while (next_permutation(&arr[0], &arr[n]));
+	
 	return 0;
 }
