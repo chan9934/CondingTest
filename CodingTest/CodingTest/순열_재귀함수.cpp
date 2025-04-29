@@ -35,3 +35,4 @@ void Permutation(int n, int r, int d)
 		swap(arr[i], arr[d]);
 	}
 }
+
