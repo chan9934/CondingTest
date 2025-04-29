@@ -3,23 +3,30 @@ vector<int> vec = { 1,2,3,4,5 };
 int n = 5;
 int r = 3;
 
-void Func_Permutation(int n, int r, int depth)
+void Func_Combination(vector<int>v, int s_i)
 {
-	if (r == depth)
+	if (v.size() == r)
 	{
-		Permutation::Print(vec, r);
+		Permutation::Print(v, r);
 		return;
 	}
-	for (int i = depth; i < n; ++i)
+
+
+	for (int i = s_i + 1; i < n; ++i)
 	{
-		swap(vec[i], vec[depth]);
-		Func_Permutation(n, r, depth + 1);
-		swap(vec[i], vec[depth]);
+		v.push_back(i);
+		Func_Combination(v, s_i + 1);
+		v.pop_back();
 	}
 }
 int main()
 {
+	for (int i = 0; i < n; ++i)
+	{
+		for (int j = i + 1; j < n; ++j)
+		{
 
-	Func_Permutation(5, 3, 0);
+		}
+	}
 	return 0;
 }
