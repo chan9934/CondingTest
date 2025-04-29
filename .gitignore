@@ -1,38 +1,50 @@
-# Created by https://www.toptal.com/developers/gitignore/api/c++
-# Edit at https://www.toptal.com/developers/gitignore?templates=c++
+# Visual Studio 관련
+.vs/
+*.user
+*.suo
+*.sdf
+*.dbmdl
+*.VC.db
+*.VC.opendb
 
-### C++ ###
-# Prerequisites
-*.d
+# 빌드 결과물
+/bin/
+/obj/
+/Debug/
+/Release/
+/x64/
+/x86/
+/ipch/
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# CMake, MSBuild 캐시
+CMakeFiles/
+CMakeCache.txt
+*.cmake
 
-# Precompiled Headers
-*.gch
+# 임시/로그/백업 파일
+*.log
+*.tlog
+*.tmp
+*.bak
+*.swp
+*.ncb
+
+# 기타
+*.pdb
+*.exe
+*.dll
+*.lib
+*.ilk
 *.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
+# macOS, Linux 개발 환경 호환
+.DS_Store
 *.out
-*.app
+*.o
+*.a
 
-# End of https://www.toptal.com/developers/gitignore/api/c++
+# Git 관련
+*.orig
+
+# 환경 설정
+.env
