@@ -6,6 +6,7 @@ using namespace std;
 
 int n = 9, r = 7;
 vector<int>input_vec;
+int AllSum;
 
 void vec_print(const vector<int>& vec)
 {
@@ -22,13 +23,13 @@ bool vec_sum(const vector<int>& Indexes)
 	{
 		sum += input_vec[Index];
 	}
-	if (sum == 100)
+	if (AllSum - sum == 100)
 		return true;
 	return false;
 }
-bool func_Combi( vector<int>& ret_combi, int depth)
+bool func_Combi(vector<int>& ret_combi, int depth)
 {
-	if (!ret_combi.empty() && ret_combi.size() == r)
+	if (!ret_combi.empty() && ret_combi.size() == n - r)
 	{
 		if (vec_sum(ret_combi))
 		{
@@ -56,15 +57,17 @@ int main()
 		int value;
 		cin >> value;
 		input_vec.push_back(value);
+		AllSum += value;
 	}
 	vector<int> combi_Indexes;
 	func_Combi(combi_Indexes, -1);
-	if(!combi_Indexes.empty())
+	if (!combi_Indexes.empty())
 	{
 		vector<int>ret_vec;
-		for (int Index : combi_Indexes)
+		for (int i = 0; i < input_vec.size(); ++i)
 		{
-			ret_vec.emplace_back(input_vec[Index]);
+			if (combi_Indexes.end() == find(combi_Indexes.begin(), combi_Indexes.end(), i))
+				ret_vec.emplace_back(input_vec[i]);
 		}
 		sort(ret_vec.begin(), ret_vec.end());
 		vec_print(ret_vec);
