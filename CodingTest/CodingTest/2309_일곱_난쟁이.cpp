@@ -5,7 +5,7 @@
 using namespace std;
 
 int n = 9, r = 7;
-vector<int>intput_vec, ret_vec;
+vector<int>input_vec;
 
 void vec_print(const vector<int>& vec)
 {
@@ -15,38 +15,36 @@ void vec_print(const vector<int>& vec)
 	}
 
 }
-bool vec_sum(const vector<int>& vec)
+bool vec_sum(const vector<int>& Indexes)
 {
 	int sum = 0;
-	for (int i = 0; i < r; ++i)
+	for (int Index : Indexes)
 	{
-		sum += vec[i];
+		sum += input_vec[Index];
 	}
 	if (sum == 100)
 		return true;
 	return false;
 }
-bool func_Permu( int depth)
+bool func_Combi( vector<int>& ret_combi, int depth)
 {
-	if (depth == r)
+	if (!ret_combi.empty() && ret_combi.size() == r)
 	{
-		if (vec_sum(intput_vec))
+		if (vec_sum(ret_combi))
 		{
-
-			ret_vec = intput_vec;
 			return true;
 		}
 		return false;
 	}
 
-	for (int i = depth; i < n; ++i)
+	for (int i = depth + 1; i < n; ++i)
 	{
-		swap(intput_vec[i], intput_vec[depth]);
-		if (func_Permu(depth + 1))
+		ret_combi.emplace_back(i);
+		if (func_Combi(ret_combi, depth + 1))
 		{
 			return true;
 		}
-		swap(intput_vec[i], intput_vec[depth]);
+		ret_combi.pop_back();
 	}
 	return false;
 }
@@ -57,12 +55,17 @@ int main()
 	{
 		int value;
 		cin >> value;
-		intput_vec.push_back(value);
+		input_vec.push_back(value);
 	}
-	func_Permu(0);
-	if(!ret_vec.empty())
+	vector<int> combi_Indexes;
+	func_Combi(combi_Indexes, -1);
+	if(!combi_Indexes.empty())
 	{
-		ret_vec.resize(r);
+		vector<int>ret_vec;
+		for (int Index : combi_Indexes)
+		{
+			ret_vec.emplace_back(input_vec[Index]);
+		}
 		sort(ret_vec.begin(), ret_vec.end());
 		vec_print(ret_vec);
 	}
