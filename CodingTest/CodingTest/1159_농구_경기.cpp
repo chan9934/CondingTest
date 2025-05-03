@@ -7,7 +7,7 @@ using namespace std;
 
 int num;
 vector<string>cnt_str;
-map<char, int>first_names;
+int cnt[26];
 vector<char>first_chars;
 
 int main()
@@ -17,13 +17,13 @@ int main()
 	for (int i = 0; i < num; ++i)
 	{
 		cin >> cnt_str[i];
-		first_names[cnt_str[i][0]] += 1;
+		++ cnt[int(cnt_str[i][0])- 'a'];
 	}
-	for (auto first_name : first_names)
+	for (int i = 0; i < sizeof(cnt) / sizeof(cnt[0]); ++i)
 	{
-		if (first_name.second >= 5)
+		if (cnt[i] >= 5)
 		{
-			first_chars.emplace_back(first_name.first);
+			first_chars.emplace_back(char('a' + i));
 		}
 	}
 	sort(first_chars.begin(), first_chars.end());
