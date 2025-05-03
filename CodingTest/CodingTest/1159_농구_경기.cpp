@@ -8,7 +8,7 @@ using namespace std;
 int num;
 vector<string>cnt_str;
 int cnt[26];
-vector<char>first_chars;
+string first_chars;
 
 int main()
 {
@@ -23,7 +23,7 @@ int main()
 	{
 		if (cnt[i] >= 5)
 		{
-			first_chars.emplace_back(char('a' + i));
+			first_chars += (char('a' + i));
 		}
 	}
 	sort(first_chars.begin(), first_chars.end());
