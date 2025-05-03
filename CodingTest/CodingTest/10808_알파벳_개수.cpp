@@ -3,23 +3,18 @@
 
 using namespace std;
 string str;
-map<int, int> alphabet_map;
+int cnt[26];
 
 int main()
 {
 	cin >> str;
-	for (int i = int('a'); i <= int('z'); ++i)
-	{
-		alphabet_map.emplace(i, 0);
-	}
 	for (char chr : str)
 	{
-		auto iterator = alphabet_map.find(chr);
-		++iterator->second;
+		++cnt[int(chr) - 'a'];
 	}
-	for (auto alphabet : alphabet_map)
+	for (int element : cnt)
 	{
-		cout << alphabet.second << " ";
+		cout << element << " ";
 	}
 
 	return 0;
