@@ -26,7 +26,6 @@ int main()
 			first_chars += (char('a' + i));
 		}
 	}
-	sort(first_chars.begin(), first_chars.end());
 	if (first_chars.empty())
 	{
 		cout << "PREDAJA";
