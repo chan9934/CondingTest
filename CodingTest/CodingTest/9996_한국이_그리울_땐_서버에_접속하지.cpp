@@ -18,7 +18,6 @@ int main()
 	start_pos = pattern.find('*');
 	left_str = pattern.substr(0, start_pos);
 	right_str = pattern.substr(start_pos + 1);
-	reverse(right_str.begin(), right_str.end());
 
 	/*string str;
 	cin >> str;
@@ -30,13 +29,11 @@ int main()
 		cin >> str;
 		string temp_right_str = str;
 		reverse(temp_right_str.begin(), temp_right_str.end());
-		auto find_left = str.find(left_str);
-		auto find_right = temp_right_str.find(right_str);
 		if (size(str) < size(left_str) + size(right_str))
 		{
 			return_strs.emplace_back(NO);
 		}
-		else if (find_left == 0 && find_right == 0)
+		else if (left_str == str.substr(0, size(left_str)) && right_str == str.substr(size(str) - size(right_str)))
 		{
 			return_strs.emplace_back(YES);
 		}
