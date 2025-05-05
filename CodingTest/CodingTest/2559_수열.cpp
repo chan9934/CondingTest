@@ -4,37 +4,21 @@
 using namespace std;
 
 int n, r, ret_max;
-vector<int>v;
-vector<int>sum_v;
+int sum_v[100004];
 
 int main()
 {
 	cin >> n >> r;
-	for (int i = 0; i < n; ++i)
+	ret_max = -(100 * r) - 4;
+	for (int i = 1; i <= n; ++i)
 	{
 		int num;
 		cin >> num;
-		v.emplace_back(num);
-		if (v.size() >= r)
-		{
-			if (sum_v.empty())
-			{
-				int sum = 0;
-				for (int j = 0; j < r; ++j)
-				{
-					sum += v[j];
-				}
-				sum_v.emplace_back(sum);
-				ret_max = sum;
-				continue;
-			}
-			else
-			{
-				sum_v.emplace_back(sum_v[i - r] - v[i - r] +v[i]);
-			}
-			ret_max = max(ret_max, *(sum_v.end() - 1));
-		}
-		
+		sum_v[i] = sum_v[i - 1] + num;
+	}
+	for (int i = r; i <= n; ++i)
+	{
+		ret_max = max(ret_max, sum_v[i] - sum_v[i - r]);
 	}
 	cout << ret_max;
 	return 0;
