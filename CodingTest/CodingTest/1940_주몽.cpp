@@ -16,6 +16,11 @@ int main()
 			continue;
 		v.emplace_back(number);
 	}
+	if (m > 200000)
+	{
+		cout << 0;
+		return 0;
+	}
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = i + 1; j < n; ++j)
