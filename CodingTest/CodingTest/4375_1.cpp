@@ -9,18 +9,16 @@ int main()
 {
 	while (cin >> Number)
 	{
-		int Index = 0;
+		int Index = 1;
 		int Remainder = 1;
-		int Cumsum = 0;
 		while (true)
 		{
-			++Index;
-			Cumsum += Remainder;
-			if (Cumsum % Number == 0)
+			if (Remainder % Number == 0)
 			{
 				break;
 			}
-			Remainder = (Remainder * 10) % Number;
+			Remainder = ((Remainder * 10) % Number + 1) % Number;
+			++Index;
 		}
 
 		cout << Index << "\n";
