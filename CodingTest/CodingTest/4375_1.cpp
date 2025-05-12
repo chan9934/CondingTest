@@ -1,27 +1,27 @@
-#include <iostream>
-#include <vector>
-using namespace std;
+	#include <iostream>
+	#include <vector>
+	using namespace std;
 
-int Number;
+	int Number;
 
 
-int main()
-{
-	while (cin >> Number)
+	int main()
 	{
-		int Index = 1;
-		int Remainder = 1;
-		while (true)
+		while (cin >> Number)
 		{
-			if (Remainder % Number == 0)
+			int Index = 1;
+			int Remainder = 1;
+			while (true)
 			{
-				break;
+				if (Remainder % Number == 0)
+				{
+					break;
+				}
+				Remainder = ((Remainder * 10) + 1) % Number;
+				++Index;
 			}
-			Remainder = ((Remainder * 10) % Number + 1) % Number;
-			++Index;
-		}
 
-		cout << Index << "\n";
+			cout << Index << "\n";
+		}
+		return 0;
 	}
-	return 0;
-}
