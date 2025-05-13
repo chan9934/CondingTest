@@ -93,6 +93,9 @@
     <ClCompile Include="인접행렬.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
+    <ClCompile Include="인접 리스트.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
