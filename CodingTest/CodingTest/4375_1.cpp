@@ -4,7 +4,6 @@
 
 	int Number;
 
-
 	int main()
 	{
 		while (cin >> Number)
