@@ -102,6 +102,12 @@
     <ClCompile Include="DFS.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
+    <ClCompile Include="BFS.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="트리순회.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
