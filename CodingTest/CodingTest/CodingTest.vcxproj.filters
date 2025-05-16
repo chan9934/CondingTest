@@ -120,6 +120,9 @@
     <ClCompile Include="2583_영역_구하기.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
+    <ClCompile Include="1992_쿼드트리.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
