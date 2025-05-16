@@ -5,12 +5,11 @@ using namespace std;
 int n;
 char a[68][68];
 
-
 string quard(int y, int x, int size)
 {
 	if (size == 1)
 		return string(1, a[y][x]);
-	string ret;
+
 	char chk = a[y][x];
 	for (int i = y; i < y + size; ++i)
 	{
@@ -18,19 +17,17 @@ string quard(int y, int x, int size)
 		{
 			if (chk != a[i][j])
 			{
-				ret = '('
+				return '('
 					+ quard(y, x, size / 2)
 					+ quard(y, x + size / 2, size / 2)
 					+ quard(y + size / 2, x, size / 2)
 					+ quard(y + size / 2, x + size / 2, size / 2)
 					+ ')';
-				return ret;
 			}
 		}
 	}
-	return string(1, chk);
+	return string(1, a[y][x]);
 }
-
 int main()
 {
 	cin >> n;
@@ -43,6 +40,5 @@ int main()
 		}
 	}
 	cout << quard(0, 0, n);
-
 	return 0;
 }
