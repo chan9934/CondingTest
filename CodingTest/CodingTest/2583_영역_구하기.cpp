@@ -13,10 +13,10 @@ vector<int>ret_v;
 int dy[] = { -1, 0, 1, 0 };
 int dx[] = { 0, 1, 0, -1 };
 
-void dfs(int y, int x, int& cnt)
+int dfs(int y, int x)
 {
 	visited[y][x] = true;
-	++cnt;
+	int cnt = 1;
 	for (int i = 0; i < 4; ++i)
 	{
 		int ny = y + dy[i];
@@ -25,8 +25,9 @@ void dfs(int y, int x, int& cnt)
 		if (ny < 0 || nx < 0 || ny >= n || nx >= m) continue;
 		if (a[ny][nx] == true)continue;
 		if (visited[ny][nx] == true)continue;
-		dfs(ny, nx, cnt);
+		cnt += dfs(ny, nx);
 	}
+	return cnt;
 }
 int main()
 {
@@ -49,8 +50,7 @@ int main()
 		{
 			if (a[i][j] == false && visited[i][j] == false)
 			{
-				int cnt = 0;
-				dfs(i, j, cnt);
+				int cnt = dfs(i, j);
 				++ret;
 				ret_v.push_back(cnt);
 			}
