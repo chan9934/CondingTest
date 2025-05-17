@@ -1,60 +1,42 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <map>
 using namespace std;
 
-struct S_V
-{
-	int value;
-	int Num = 1;
-
-	S_V(int _value)
-	{
-		value = _value;
-	}
-	~S_V()
-	{
-
-	}
-	bool operator==(const S_V& other)
-	{
-		if (value == other.value)
-		{
-			++Num;
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
-};
 int n, c;
-vector<S_V>vec;
+map<int, int>mp, mp_first;
+
+vector<pair<int, int>> v;
+
+bool cmp(pair<int, int> A, pair<int, int> B)
+{
+	if (A.second == B.second)
+	{
+		return mp_first[A.first] < mp_first[B.first];
+	}
+	return A.second > B.second;
+}
 
 int main()
 {
 	cin >> n >> c;
-
-	int temp = 0;
 	for (int i = 0; i < n; ++i)
 	{
+		int temp = 0;
 		cin >> temp;
-		S_V new_sv = S_V(temp);
-		if (vec.end() == find(vec.begin(), vec.end(), new_sv))
-			vec.push_back(new_sv);
+		int mp_value = ++mp[temp];
+		if (mp_value == 1)
+			mp_first[temp] = i;
 	}
-	stable_sort(vec.begin(), vec.end(),
-		[](const S_V& A, const S_V& B)
-		{
-			return A.Num > B.Num;
-		}
-	);
-	for (S_V v : vec)
+	for (auto element : mp)
 	{
-		for (int i = 0; i < v.Num; ++i)
-		{
-			cout << v.value << " ";
+		v.push_back(element);
+	}
+	sort(v.begin(), v.end(), cmp);
+	for (auto i : v) {
+		for (int j = 0; j < i.second; j++) {
+			cout << i.first << " ";
 		}
 	}
 	return 0;
