@@ -9,7 +9,12 @@ using namespace std;
 #define PASS " is acceptable."
 #define UNPASS " is not acceptable."
 
-vector<char> vowel= { 'a','e','i','o','u' };
+bool isVowel(char chr)
+{
+	if (chr == 'a' || chr == 'e' || chr == 'i' || chr == 'o' || chr == 'u')
+		return true;
+	return false;
+}
 
 int main()
 {
@@ -22,68 +27,30 @@ int main()
 		{
 			break;
 		}
-		bool num_vowel = false;
-		int current_sequence = 0;
-		bool before_vowel = false;
+		int lcnt = 0, vcnt = 0;
+		bool is_include_v = false;
+		char prev;
 		bool pass = true;
 
 		for (size_t i = 0; i < size(s); ++i)
 		{
-			if (vowel.end() != find(vowel.begin(), vowel.end(), s[i]))
-			{
-				num_vowel = true;
-				if (i != 0)
-				{
-					if (!before_vowel)
-					{
-						current_sequence = 1;
-					}
-					else
-					{
-						++current_sequence;
-					}
-				}
-				else
-					++current_sequence;
-				before_vowel = true;
-			}
+			if (isVowel(s[i])) ++vcnt, lcnt = 0, is_include_v = true;
 			else
-			{
-				if (i != 0)
-				{
-					if (before_vowel)
-					{
-						current_sequence = 1;
-					}
-					else
-					{
-						++current_sequence;
-					}
-				}
-				else
-					++current_sequence;
-				before_vowel = false;
-			}
-			if( i == 0)
-			{
-				continue;
-			}
+				++lcnt, vcnt = 0;
 
-			if (current_sequence >= 3)
+			if (lcnt >= 3 || vcnt >= 3)
 			{
 				pass = false;
 				break;
 			}
-			if (s[i - 1] == s[i])
+			if (i != 0 && ((prev == s[i]) && (prev != 'e' && prev != 'o')))
 			{
-				if (s[i] != 'e' && s[i] != 'o')
-				{
-					pass = false;
-					break;
-				}
+				pass = false;
+				break;
 			}
+			prev = s[i];
 		}
-		if(num_vowel == false)
+		if(is_include_v == false)
 			pass = false;
 
 		s = '<' + s + '>';
