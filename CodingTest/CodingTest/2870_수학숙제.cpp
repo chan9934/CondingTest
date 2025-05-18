@@ -45,13 +45,7 @@ bool comp(const string& a, const string& b)
 		return false;
 	if (a.size() == b.size())
 	{
-		for (size_t i = 0; i < a.size(); ++i)
-		{
-			if (a[i] != b[i])
-			{
-				return a[i] < b[i];
-			}
-		}
+		return a < b;
 	}
 	else
 	{
