@@ -30,6 +30,14 @@ int main()
 	{
 		for (int j = 0; j < w; ++j)
 		{
+			if (a[i][j] == 0) {
+				int cnt = 1;
+				while (a[i][j + 1] == -1)
+				{
+					a[i][j + 1] = cnt++;
+					++j;
+				}
+			}
 			if (j == 0) continue;
 			if (a[i][j] == 0)continue;
 			int temp = a[i][j - 1];
