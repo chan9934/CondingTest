@@ -5,53 +5,69 @@
 using namespace std;
 
 int t, n;
-map<int, pair<int, int>>container;
 pair<int, int>get(int number)
 {
 	pair<int, int>ret;
-	while (number % 2 == 0)
+	bool fin_two = false;
+	bool fin_five = false;
+	while (true)
 	{
-		number /= 2;
-		++ret.first;
-	}
-	while (number % 5 == 0)
-	{
-		number /= 5;
-		++ret.second;
+		if (!fin_two)
+		{
+			if (number % 2 == 0)
+			{
+				number /= 2;
+				++ret.first;
+			}
+			else
+			{
+				fin_two = true;
+			}
+		}
+		if (!fin_five)
+		{
+			if (number % 5 == 0)
+			{
+				number /= 5;
+				++ret.second;
+			}
+			else
+			{
+				fin_five = true;
+			}
+		}
+		if (fin_two && fin_five)
+			break;
 	}
 	return ret;
 }
 pair<int, int> fac(int number)
 {
-	int index = 0;
-	while (true)
+	pair<int, int>ret;
+	for (int i = 2; i <= number;)
 	{
-		number == 0;
+		cout << i << "\n";
+		pair<int, int>temp = get(i);
+		ret.first += temp.first;
+		ret.second += temp.second;
+		i = i + 2;
+		if(i % 10 == 0)
+			i = i + 2;
 	}
-	while (container.size() <  number + 1)
+	for (int i = 5; i <= number;)
 	{
-		if (container.empty() || container.size() == 1)
-		{
-		}
-		else
-		{
-			pair<int, int>ret = get((container.size() + 1));
-			if (ret.first == 0 && ret.second == 0)
-			{
-
-			}
-			pair<int, int>ret_before = *(container.end() - 1);
-			ret.first += ret_before.first;
-			ret.second += ret_before.second;
-			container.push_back(ret);
-		}
+		cout << i << "\n";
+		pair<int, int>temp = get(i);
+		ret.first += temp.first;
+		ret.second += temp.second;
+		i = i + 5;
 	}
-	return container[number];
+	return ret;
 }
 int main()
 {
 	cin >> t;
-	
+
 	for (int i = 0; i < t; ++i)
 	{
 		cin >> n;
