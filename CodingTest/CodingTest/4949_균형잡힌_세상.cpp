@@ -11,37 +11,39 @@ int main()
 	while (true)
 	{
 		getline(cin, s);
-		if (s == string(1, '.'))
+		if (s == ".")
 			break;
 		stack<char> stk;
+		bool check = true;
 		for (char c : s)
 		{
-			if (c == '.' || c == ' ')
-				continue;
-			if ((int('a') <= int(c) && int('z') >= int(c)) || (int('A') <= int(c) && int('Z') >= int(c)))
-				continue;
-			if (!stk.empty())
+			if (c == ']')
 			{
-				char top = stk.top();
-				if (top == ']' || top == ')')
+				if (stk.empty() || stk.top() == '(')
+				{
+					check = false;
 					break;
-				if (c == ']' && top == '[')
-				{
-					stk.pop();
-					continue;
 				}
-				else if (c == ')' && top == '(')
-				{
-					stk.pop();
-					continue;
-				}
+				stk.pop();
+				continue;
 			}
-			stk.push(c);
+			if (c == ')')
+			{
+				if (stk.empty() || stk.top() == '[')
+				{
+					check = false;
+					break;
+				}
+				stk.pop();
+				continue;
+			}
+			if (c == '[') stk.push(c);
+			if (c == '(') stk.push(c);
 		}
-		if (stk.empty())
-			cout << "yes" << "\n";
+		if (check && stk.empty())
+			cout << "yes\n";
 		else
-			cout << "no" << "\n";
+			cout << "no\n";
 
 		s.clear();
 	}
