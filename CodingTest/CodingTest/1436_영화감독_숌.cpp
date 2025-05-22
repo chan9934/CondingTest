@@ -3,44 +3,28 @@
 
 using namespace std;
 
-int n, f, b, s, r;
+int n;
 
 string ret;
 
 int main()
 {
-	while(true)
+	cin >> n;
+	int i = 666;
+	while (true)
 	{
-		cin >> n;
+		ret = to_string(i);
+		if (string::npos != ret.find("666"))
+		{
+			--n;
 
-		s = n / 16;
-		r = n % 16;
-		if (r <= 6)
-		{
-			if (s == 0)
+			if (n == 0)
 			{
-				f = r - 1;
+				cout << ret;
+				break;
 			}
-			else
-			{
-				f = (s - 1) * 10 + 6 + r + 1;
-			}
-			b = 6;
 		}
-		else
-		{
-			if (s == 0)
-			{
-				f =  6;
-			}
-			else
-			{
-				f = (s - 1) * 10 + 6;
-			}
-			b = r - 7;
-		}
-		ret = to_string(f) + "66" + to_string(b);
-		cout << ret << endl;
+		++i;
 	}
 	return 0;
 }
