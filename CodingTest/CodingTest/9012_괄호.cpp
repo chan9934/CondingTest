@@ -25,6 +25,10 @@ int main()
 						container.pop();
 						continue;
 					}
+					else
+					{
+						break;
+					}
 				}
 			}
 			container.push(c);
