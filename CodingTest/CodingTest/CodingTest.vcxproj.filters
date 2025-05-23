@@ -153,7 +153,7 @@
     <ClCompile Include="4949_균형잡힌_세상.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="14502_연구소.cpp">
+    <ClCompile Include="2636_치즈.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
   </ItemGroup>
@@ -163,6 +163,9 @@
     </ClInclude>
     <ClInclude Include="2852_NBA_농구.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="14502_연구소.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
