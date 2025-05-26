@@ -7,26 +7,28 @@ using namespace std;
 int n, m;
 int a, b;
 vector<int>adj [10004] ;
-map<int, int> dfs_values;
+int visited[10004];
 vector<int>ret;
 int max_number;
 
 int dfs(int here)
 {
-	if (dfs_values.end() != dfs_values.find(here))
-		return dfs_values[here];
+	visited[here] = 1;
 	int ret = 0;
 	int number = 1;
 	for (int there : adj[here])
 	{
+		if (here == there)
+			continue;
+		if (visited[there] == 1)
+			continue;
 		if (!adj[there].empty())
 		{
 			number += dfs(there);
 		}
 		ret = max(ret, number);
 	}
-	dfs_values[here] = ret;
-
+	visited[here] = 0;
 	return ret;
 }
 int main()
