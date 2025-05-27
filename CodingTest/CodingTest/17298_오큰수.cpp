@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <algorithm>
 using namespace std;
 
 int n, a; int arr[1000004];
@@ -8,7 +9,11 @@ stack<int> stk;
 
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 	cin >> n;
+	fill(&ret[0], &ret[0] + size(ret), -1);
 	for (int i = 0; i < n; ++i)
 	{
 		cin >> a;
@@ -25,12 +30,6 @@ int main()
 				break;
 		}
 		stk.push(i);
-	}
-	while (!stk.empty())
-	{
-		int top_index = stk.top();
-		ret[top_index] = -1;
-		stk.pop();
 	}
 	for (int i = 0; i < n; ++i)
 	{
