@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int n, l, r, ret;
+int n, l, r, ret, sum;
 
 int a[104][104];
 int visited[104][104];
@@ -16,6 +16,7 @@ void dfs(int y, int x, vector<pair<int, int>>& v_p)
 {
 	visited[y][x] = 1;
 	v_p.push_back({ y,x });
+	sum += a[y][x];
 	for (int i = 0; i < 4; ++i)
 	{
 		int ny = y + dy[i];
@@ -70,27 +71,26 @@ int main()
 	while (true)
 	{
 		bool finish = true;
-		vector < vector<pair<int, int>>> teams;
 		for (int i = 0; i < n; ++i)
 		{
 			for (int j = 0; j < n; ++j)
 			{
 				if (visited[i][j] == 0)
 				{
+					sum = 0;
 					vector<pair<int, int>>v_p;
 					dfs(i, j, v_p);
 					if (v_p.size() > 1)
 					{
-						teams.push_back(v_p);
+						int avg = sum / v_p.size();
+						for (auto p : v_p)
+						{
+							a[p.first][p.second] = avg;
+						}
 						finish = false;
 					}
 				}
 			}
-		}
-		for (auto v_p : teams)
-		{
-			adjust(v_p);
-
 		}
 		if (finish)
 			break;
@@ -98,15 +98,6 @@ int main()
 		{
 			fill(&visited[0][0], &visited[0][0] + 104 * 104, 0);
 			++ret;
-			/*cout << '\n';
-			for (int i = 0; i < n; ++i)
-			{
-				for (int j = 0; j < n; ++j)
-				{
-					cout << a[i][j] << " ";
-				}
-				cout << '\n';
-			}*/
 		}
 	}
 
