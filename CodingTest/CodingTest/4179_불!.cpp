@@ -1,6 +1,7 @@
 #include <iostream>
 #include <queue>
 #include <tuple>
+#include <vector>
 
 using namespace std;
 
@@ -9,6 +10,8 @@ bool flag;
 char a[1004][1004];
 int visited[1004][1004];
 int fire[1004][1004];
+vector<pair<int, int>>init_fires;
+
 
 int dy[] = { -1, 0, 1, 0 };
 int dx[] = { 0, 1, 0 ,-1 };
@@ -45,14 +48,20 @@ void J_bfs(int y, int x)
 		}
 	}
 }
-void F_bfs(int y, int x)
+void F_bfs()
 {
-	fire[y][x] = 0;
+	if (init_fires.empty())
+		return;
 	queue <pair< int, int >> q;
-	q.push({ y, x });
+	for (auto init_fire : init_fires)
+	{
+		q.push(init_fire);
+		fire[init_fire.first][init_fire.second] = 0;
+	}
 	while (q.size())
 	{
-		tie(y, x) = q.front();
+		int y = q.front().first;
+		int x = q.front().second;
 		q.pop();
 		for (int i = 0; i < 4; ++i)
 		{
@@ -85,16 +94,11 @@ int main()
 
 			if (a[i][j] == 'J')
 				J_y = i, J_x = j;
+			else if (a[i][j] == 'F')
+				init_fires.push_back({ i, j });
 		}
 	}
-	for (int i = 0; i < r; ++i)
-	{
-		for (int j = 0; j < c; ++j)
-		{
-			if (a[i][j] == 'F' && fire[i][j] == -1)
-				F_bfs(i, j);
-		}
-	}
+	F_bfs();
 	J_bfs(J_y, J_x);
 	if (flag)
 		cout << ret;
