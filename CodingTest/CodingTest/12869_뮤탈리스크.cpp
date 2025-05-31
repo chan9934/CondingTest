@@ -22,6 +22,7 @@ int main()
 		sort(v.begin(), v.end());
 		if (n == 3)
 		{
+
 			if (v[1] == 9)
 			{
 				v[0] -= 1;
