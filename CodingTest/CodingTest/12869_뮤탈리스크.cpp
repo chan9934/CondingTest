@@ -1,53 +1,56 @@
 #include <iostream>
-#include <vector>
+#include <queue>
+#include <tuple>
 
 using namespace std;
 
 int n, ret;
-vector<int> v;
-
-void permutation(vector<int> temp, int depth, int level)
+int a[3];
+int visited[10][10][10];
+int d[6][3] = {
+	{9,3,1},
+	{9,1,3},
+	{3,9,1},
+	{3,1,9},
+	{1,3,9},
+	{1,9,3},
+};
+struct A {
+	int a, b, c;
+};
+int bfs(int a, int b, int c)
 {
-	if(depth == n)
-	{
-		temp[0] -= 9;
-		temp[1] -= 3;
-		temp[2] -= 1;
-		for (int i = 0; i < n; ++i)
-		{
-			if (temp[i] > 0)
-				break;
-			if (i == n - 1)
-			{
-				ret = min(level, ret);
-				return;
-			}
-		}
-		permutation(temp, 0, level + 1);
-		cout << level + 1 << "\n";
-		
-		return;
-	}
+	visited[a][b][c] = 1;
+	queue<A> q;
+	q.push({ a,b,c });
 
-	for (int i = depth; i < n; ++i)
+	while (q.size())
 	{
-		swap(temp[i], temp[depth]);
-		permutation(temp, depth + 1, level);
-		swap(temp[i], temp[depth]);
+		a = q.front().a;
+		b = q.front().b;
+		c = q.front().c;
+		q.pop();
+		if (visited[0][0][0]) break;
+		for (int i = 0; i < 6; ++i)
+		{
+			int na = max(0, a - d[i][0]);
+			int nb = max(0, b - d[i][1]);
+			int nc = max(0, c - d[i][2]);
+			if (visited[na][nb][nc])continue;
+			visited[na][nb][nc] = visited[a][b][c] + 1;
+			q.push({ na, nb, nc });
+		}
 	}
+	return visited[0][0][0] - 1;
 }
 
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
 	cin >> n;
-
-	for (int i = 0; i < n; ++i)
-	{
-		int temp = 0;
-		cin >> temp;
-		v.push_back(temp);
-	}
-	ret = 100;
-	permutation(v, 0, 0);
-	cout << ret;
+	for (int i = 0; i < n; i++) cin >> a[i];
+	cout << bfs(a[0], a[1], a[2]) << "\n";
+	return 0;
 }
