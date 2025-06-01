@@ -179,7 +179,7 @@
     <ClCompile Include="1629_곱셈.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="1663７＿괄호＿추가하기.cpp" />
+    <ClCompile Include="16637_괄호_추가하기.cpp" />
     <ClCompile Include="17298_오큰수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
