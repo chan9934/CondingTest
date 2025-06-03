@@ -1,4 +1,1 @@
-﻿  16637_괄호_추가하기.cpp
-D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\16637_괄호_추가하기.cpp(53,14): warning C4267: '초기화 중': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\16637_괄호_추가하기.cpp(68,1): warning C4715: 'combi': 모든 제어 경로에서 값을 반환하지는 않습니다.
-  CodingTest.vcxproj -> D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\x64\Debug\CodingTest.exe
+﻿  CodingTest.vcxproj -> D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\x64\Debug\CodingTest.exe

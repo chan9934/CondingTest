@@ -4,111 +4,51 @@
 using namespace std;
 
 int n, ret;
-vector<char>v;
 
-int get_value(int left, char mid, int right)
+vector<int>num;
+vector<char>oper;
+
+int calculate(char oper, int l_value, int r_value)
 {
-
-	if (mid == '+')
-	{
-		return left + right;
-	}
-	else if (mid == '-')
-	{
-		return left - right;
-	}
-	else if (mid == '*')
-	{
-		return left * right;
-	}
-	else if (mid == '/')
-	{
-		return left / right;
-	}
-	else
-		return 0;
+	if (oper == '+')return l_value + r_value;
+	else if (oper == '-')return l_value - r_value;
+	else if (oper == '*')return l_value * r_value;
 }
-int combi(int count, int r, int startindex, vector<int>& indecies)
+
+void go(int here, int l_value)
 {
-	if (indecies.size() == r)
+	if (here == num.size() - 1)
 	{
-		/*int before_a = a[0];
-		int before_c = a[0];
-		for (int i = 1; i < n / 2; ++i)
-		{
-			char temp_c = c[i];
-			int temp_a = a[i];
-			if (indecies.end() == find(indecies.begin(), indecies.end(), i))
-			{
-
-			}
-			else
-			{
-
-			}
-		}*/
-		int before_index = 0;
-		for (auto element : indecies)
-		{
-			for (int i = before_index; i < element; ++i)
-			{
-
-			}
-			before_index = element;
-
-			int left = atoi(&v[element * 2]);
-			int right = atoi(&v[element * 2 + 2]);
-			char mid = v[element * 2 + 1];
-
-			int temp = 0;
-			if (mid == '+')
-			{
-				temp = left + right;
-			}
-			else if (mid == '-')
-			{
-				temp = left - right;
-			}
-			else if (mid == '*')
-			{
-				temp = left * right;
-			}
-			else if (mid == '/')
-			{
-				temp = left / right;
-			}
-			for(int i = temp_v.size(); i < element * 2 -1; ++i)
-			{
-				temp_v.push_back(v[i]);
-			}
-			temp_v.push_back('+');
-			temp_v.push_back(temp + '0');
-		}
-		return 0;
+		ret = max(ret, l_value);
+		return;
 	}
-	for (int i = startindex + 1; i < count; ++i)
+
+	go(here + 1, calculate(oper[here],  l_value, num[here + 1]));
+	if (here + 2 <= num.size() - 1)
 	{
-		indecies.push_back(i);
-		combi(count, r, i, indecies);
-		indecies.pop_back();
+		int temp = calculate(oper[here + 1], num[here + 1], num[here + 2]);
+		go(here + 2, calculate(oper[here], l_value, temp));
 	}
 }
 
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
+	ret = INT32_MIN;
 	cin >> n;
 
-	for (int i = 1; i <= n; i++)
+	for (int i = 0; i < n; ++i)
 	{
 		char c;
 		cin >> c;
-		v.push_back(c);
+		if (i & 1)
+			oper.push_back(c);
+		else
+			num.push_back(c - '0');
 	}
 
-	ret = numeric_limits<int>::min();
-	for (int i = 1; i <= n/2; ++i)
-	{
-		vector<int> indecies;
-		ret = max( ret, combi(n / 2, i,-1, indecies));
-	}
+	go(0, num[0]);
+	cout << ret << "\n";
+	return 0;
 }
