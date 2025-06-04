@@ -3,50 +3,47 @@
 
 using namespace std;
 
-int n, k, ret, cnt;
+int n, k;
+
 int visited[100004];
+int cnt[100004];
 
 void bfs(int x)
 {
-	visited[x] = 1;
 	queue<int>q;
 	q.push(x);
+	visited[x] = 1;
 
-	auto func = [&](int current, int nx)
-		{
-			if (nx == k)
-			{
-				ret = visited[current];
-				++cnt;
-				return;
-			}
-			if (nx < 0 || nx > 100000) return;
-			if (visited[nx] == 0)
-				visited[nx] = visited[current] + 1;
-			q.push(nx);
-		};
 	while (q.size())
 	{
 		x = q.front();
 		q.pop();
-
-		if (cnt != 0)
+		for (int i : { x - 1, x + 1, x * 2})
 		{
-			if (visited[x] > ret)
-				return;
+			if (i < 0 || i > 100000)continue;
+
+			if (visited[i] == 0)
+			{
+				visited[i] = visited[x] + 1;
+				q.push(i);
+				++cnt[i];
+			}
+			else if (visited[i] == visited[x] + 1)
+			{
+				q.push(i);
+				++cnt[i];
+			}
 		}
-		int nx_1 = x + 1;
-		func(x, nx_1);
-		int nx_2 = x - 1;
-		func(x, nx_2);
-		int nx_3 = x * 2;
-		func(x, nx_3);
 	}
 }
-
 int main()
 {
 	cin >> n >> k;
+	if (n == k)
+	{
+		cout <<0 << "\n" << 1;
+		return 0;
+	}
 	bfs(n);
-	cout << ret << '\n' << cnt;
+	cout << visited[k] -1 << "\n" << cnt[k];
 }
