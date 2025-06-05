@@ -19,38 +19,31 @@ void bfs(int here)
 	int current_level = 0;
 	while (q.size())
 	{
-		here = q.front();
-		q.pop();
-
-		for (int i = 0; i < 3; ++i)
+		int qsize = q.size();
+		++current_level;
+		k += current_level;
+		for (int i = 0; i < qsize; ++i)
 		{
-			int next = (here * dn[i].second) + dn[i].first;
+			here = q.front();
+			q.pop();
 
-			if (current_level <= 6)
+			for (int i = 0; i < 3; ++i)
 			{
-				cout << "next : " << next << " here : " << here << " Current_level : " << current_level << " k : " << k << "\n";
-			}
-			if (next < 0 || next > 500000)continue;
+				int next = (here * dn[i].second) + dn[i].first;
 
-			if (visited[here] > current_level)
-			{
-				cout << " next : " << next << "\n";
-				current_level = visited[here];
-				k += current_level;
-			}
-			if (next == k)
-			{
-				ret = current_level;
-				return;
-			}
-			if (visited[next] == 0)
-			{
+				if (current_level <= 6)
+				{
+					cout << "next : " << next << " here : " << here << " Current_level : " << current_level << " k : " << k << "\n";
+				}
+				if (next < 0 || next > 500000)continue;
+
+				if (next == k)
+				{
+					ret = current_level;
+					return;
+				}
 				visited[next] = visited[here] + 1;
 				q.push(next);
-			}
-			else if (visited[next])
-			{
-
 			}
 		}
 	}
