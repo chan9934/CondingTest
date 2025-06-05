@@ -4,11 +4,14 @@
 #include <algorithm>
 
 using namespace std;
+#define prev aaa
+#define next aaaa
 
 int n, k, ret;
 
-int visited[100004];
-map<int, int> m;
+const int max_n = 200004;
+
+int visited[max_n], prev[max_n];
 
 void bfs(int x)
 {
@@ -22,12 +25,12 @@ void bfs(int x)
 		q.pop();
 		for (int i : { x - 1, x + 1, x * 2})
 		{
-			if (i < 0 || i > 100000)continue;
+			if (i < 0 || i > max_n)continue;
 
 			if (visited[i] == 0)
 			{
 				visited[i] = visited[x] + 1;
-				m[i] = x;
+				prev[i] = x;
 				if (i == k)
 					return;
 				q.push(i);
@@ -51,19 +54,12 @@ int main()
 	cout << visited[k] - 1 << '\n';
 
 	vector<int> ret;
-	ret.push_back(k);
-	int index = m[k];
-	ret.push_back(index);
-	while (true)
+	for (int i = k; i != n; i = prev[i])
 	{
-		if (m.end() != m.find(index))
-		{
-			index = m[index];
-			ret.push_back(index);
-		}
-		else break;
+		ret.push_back(i);
 	}
-	reverse(ret.begin(), ret.end());
+	ret.push_back(n);
+	reverse(ret.begin(), ret.end());	
 	for (int element : ret)
 	{
 		cout << element << " ";
