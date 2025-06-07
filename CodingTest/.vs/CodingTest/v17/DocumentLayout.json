@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\12851_\uC228\uBC14\uAF2D\uC9C8_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\12851_\uC228\uBC14\uAF2D\uC9C8_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\17071_\uC228\uBC14\uAF2D\uC9C8_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\17071_\uC228\uBC14\uAF2D\uC9C8_5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\12851_\uC228\uBC14\uAF2D\uC9C8_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\12851_\uC228\uBC14\uAF2D\uC9C8_2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\17298_\uC624\uD070\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\17298_\uC624\uD070\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\13913_\uC228\uBC14\uAF2D\uC9C8_4.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -47,10 +51,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\2309_\uC77C\uACF1_\uB09C\uC7C1\uC774.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\2309_\uC77C\uACF1_\uB09C\uC7C1\uC774.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\17298_\uC624\uD070\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\17298_\uC624\uD070\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\\uC870\uD569_\uC7AC\uADC0\uD568\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -279,7 +279,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -295,20 +295,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "17071_\uC228\uBC14\uAF2D\uC9C8_5.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\17071_\uC228\uBC14\uAF2D\uC9C8_5.cpp",
               "RelativeDocumentMoniker": "CodingTest\\17071_\uC228\uBC14\uAF2D\uC9C8_5.cpp",
               "ToolTip": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\17071_\uC228\uBC14\uAF2D\uC9C8_5.cpp",
               "RelativeToolTip": "CodingTest\\17071_\uC228\uBC14\uAF2D\uC9C8_5.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAwBEAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-05T22:31:11.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "13913_\uC228\uBC14\uAF2D\uC9C8_4.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\13913_\uC228\uBC14\uAF2D\uC9C8_4.cpp",
               "RelativeDocumentMoniker": "CodingTest\\13913_\uC228\uBC14\uAF2D\uC9C8_4.cpp",
@@ -316,12 +316,11 @@
               "RelativeToolTip": "CodingTest\\13913_\uC228\uBC14\uAF2D\uC9C8_4.cpp",
               "ViewState": "AQIAACUAAAAAAAAAAAAAwEMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-04T01:17:00.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T01:17:00.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "12851_\uC228\uBC14\uAF2D\uC9C8_2.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\12851_\uC228\uBC14\uAF2D\uC9C8_2.cpp",
               "RelativeDocumentMoniker": "CodingTest\\12851_\uC228\uBC14\uAF2D\uC9C8_2.cpp",
@@ -334,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "16637_\uAD04\uD638_\uCD94\uAC00\uD558\uAE30.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\16637_\uAD04\uD638_\uCD94\uAC00\uD558\uAE30.cpp",
               "RelativeDocumentMoniker": "CodingTest\\16637_\uAD04\uD638_\uCD94\uAC00\uD558\uAE30.cpp",
@@ -358,7 +357,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "12869_\uBBA4\uD0C8\uB9AC\uC2A4\uD06C.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\12869_\uBBA4\uD0C8\uB9AC\uC2A4\uD06C.cpp",
               "RelativeDocumentMoniker": "CodingTest\\12869_\uBBA4\uD0C8\uB9AC\uC2A4\uD06C.cpp",
@@ -366,8 +365,7 @@
               "RelativeToolTip": "CodingTest\\12869_\uBBA4\uD0C8\uB9AC\uC2A4\uD06C.cpp",
               "ViewState": "AQIAACQAAAAAAAAAAAAAAD0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-29T04:55:11.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-29T04:55:11.123Z"
             },
             {
               "$type": "Document",
@@ -383,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "16234_\uC778\uAD6C_\uC774\uB3D9.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\16234_\uC778\uAD6C_\uC774\uB3D9.cpp",
               "RelativeDocumentMoniker": "CodingTest\\16234_\uC778\uAD6C_\uC774\uB3D9.cpp",
@@ -395,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "2589_\uBCF4\uBB3C\uC12C.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\2589_\uBCF4\uBB3C\uC12C.cpp",
               "RelativeDocumentMoniker": "CodingTest\\2589_\uBCF4\uBB3C\uC12C.cpp",
@@ -419,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "17298_\uC624\uD070\uC218.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\17298_\uC624\uD070\uC218.cpp",
               "RelativeDocumentMoniker": "CodingTest\\17298_\uC624\uD070\uC218.cpp",
@@ -427,7 +425,8 @@
               "RelativeToolTip": "CodingTest\\17298_\uC624\uD070\uC218.cpp",
               "ViewState": "AQIAAAsAAAAAAAAAAAAqwCQAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-26T23:22:59.191Z"
+              "WhenOpened": "2025-05-26T23:22:59.191Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -467,7 +466,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "14502_\uC5F0\uAD6C\uC18C.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\14502_\uC5F0\uAD6C\uC18C.cpp",
               "RelativeDocumentMoniker": "CodingTest\\14502_\uC5F0\uAD6C\uC18C.cpp",
@@ -475,8 +474,7 @@
               "RelativeToolTip": "CodingTest\\14502_\uC5F0\uAD6C\uC18C.cpp",
               "ViewState": "AQIAAFoAAAAAAAAAAAAYwGYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-22T23:52:02.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-22T23:52:02.34Z"
             },
             {
               "$type": "Document",
@@ -638,7 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "new_scalar.cpp",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\new_scalar.cpp",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\crt\\src\\vcruntime\\new_scalar.cpp",
@@ -900,7 +898,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "1620_\uB098\uB294\uC57C_\uD3EC\uCF13\uBAAC_\uB9C8\uC2A4\uD130_\uC774\uB2E4\uC19C.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1620_\uB098\uB294\uC57C_\uD3EC\uCF13\uBAAC_\uB9C8\uC2A4\uD130_\uC774\uB2E4\uC19C.cpp",
               "RelativeDocumentMoniker": "CodingTest\\1620_\uB098\uB294\uC57C_\uD3EC\uCF13\uBAAC_\uB9C8\uC2A4\uD130_\uC774\uB2E4\uC19C.cpp",
@@ -908,8 +906,7 @@
               "RelativeToolTip": "CodingTest\\1620_\uB098\uB294\uC57C_\uD3EC\uCF13\uBAAC_\uB9C8\uC2A4\uD130_\uC774\uB2E4\uC19C.cpp",
               "ViewState": "AQIAAAEAAAAAAAAAAAAkwAsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-05T03:59:30.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-05T03:59:30.029Z"
             },
             {
               "$type": "Document",
@@ -1007,7 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "vector",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\vector",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.40.33807\\include\\vector",
@@ -1017,7 +1014,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "2309_\uC77C\uACF1_\uB09C\uC7C1\uC774.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\2309_\uC77C\uACF1_\uB09C\uC7C1\uC774.cpp",
               "RelativeDocumentMoniker": "CodingTest\\2309_\uC77C\uACF1_\uB09C\uC7C1\uC774.cpp",

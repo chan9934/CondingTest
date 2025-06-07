@@ -46,4 +46,5 @@ int main()
 	}
 	bfs(n);
 	cout << visited[k] -1 << "\n" << cnt[k];
+	return 0;
 }
