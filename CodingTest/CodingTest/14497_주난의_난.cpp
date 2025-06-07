@@ -1,4 +1,5 @@
 #include <iostream>
+#include <queue>
 
 using namespace std;
 
@@ -11,33 +12,65 @@ int visited[304][304];
 int dy[] = { -1, 0, 1, 0 };
 int dx[] = { 0, 1, 0, -1 };
 
-void dfs(int y, int x, int level)
+void bfs()
 {
-	visited[y][x] = level;
-	for (int i = 0; i < 4; ++i)
+	visited[x1 - 1][y1 - 1] = 1;
+	queue<pair<int, int>>q_0;
+	queue<pair<int, int>>q_1;
+	q_0.push({ x1 - 1, y1 - 1 });
+	while (q_0.size() || q_1.size())
 	{
-		int ny = y + dy[i];
-		int nx = x + dx[i];
-
-		if (ny < 0 || nx < 0 || ny > n || nx > m)continue;
-		if (visited[ny][nx] == level)continue;
-		cout << "ny : " << ny << " nx " << nx << "\n";
-		if (a[ny][nx] == '1')
+		while (q_0.size())
 		{
-			a[ny][nx] = '0';
-			visited[ny][nx] = level;
-			for (int i = 0; i < n; ++i)
+			pair<int, int> here = q_0.front();
+			q_0.pop();
+
+			for (int i = 0; i < 4; ++i)
 			{
-				for (int j = 0; j < m; ++j)
+				int ny = here.first + dy[i];
+				int nx = here.second + dx[i];
+
+				if (ny < 0 || nx < 0 || ny> 300 || nx>300)continue;
+				if (visited[ny][nx]) continue;
+
+				if (a[ny][nx] == '1')
 				{
-					cout <<  a[i][j] << " ";
+					q_1.push({ ny, nx });
+					visited[ny][nx] = visited[here.first][here.second] + 1;
 				}
-				cout << "\n";
+				else if (a[ny][nx] == '0')
+				{
+					q_0.push({ ny, nx });
+					visited[ny][nx] = visited[here.first][here.second];
+				}
 			}
-			cout << "\n";
 		}
-		else
-			dfs(ny, nx, level);
+		while (q_1.size())
+		{
+			pair<int, int> here = q_1.front();
+			q_1.pop();
+
+			for (int i = 0; i < 4; ++i)
+			{
+				int ny = here.first + dy[i];
+				int nx = here.second + dx[i];
+
+				if (ny < 0 || nx < 0 || ny> 300 || nx>300)continue;
+
+				if (visited[ny][nx]) continue;
+
+				if (a[ny][nx] == '1')
+				{
+					q_1.push({ ny, nx });
+					visited[ny][nx] = visited[here.first][here.second] + 1;
+				}
+				else if (a[ny][nx] == '0')
+				{
+					q_0.push({ ny, nx });
+					visited[ny][nx] = visited[here.first][here.second];
+				}
+			}
+		}
 	}
 }
 int main()
@@ -57,16 +90,7 @@ int main()
 			cin >> a[i][j];
 		}
 	}
-	int level = 1;
-	while(true)
-	{
-		dfs(x1 - 1, y1 - 1, level);
-		if(visited[x2 - 1][y2 - 1])
-		{
-			cout << level;
-			break;
-		}
-		++level;
-	}
+	bfs();
+	cout << visited[x2 - 1][y2 - 1];
 	return 0;
 }
