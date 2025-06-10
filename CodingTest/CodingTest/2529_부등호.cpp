@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <cmath>
 
 using namespace std;
 int k;
@@ -44,7 +45,7 @@ void permutation(int depth)
 		string s = get_value();
 		if (string() != s)
 		{
-			
+
 			long long value = stoll(s);
 			max_ret = max(max_ret, value);
 			min_ret = min(min_ret, value);
