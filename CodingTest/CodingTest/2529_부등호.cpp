@@ -1,47 +1,42 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
+#include<iostream>
+#include<vector>
+#include<algorithm>
 
 using namespace std;
+
 int k;
 vector<string>ret;
+int visited[11];
+char oper[11];
 
-char c[10];
-bool visited[11];
-
-bool oper(char left, char right, char c)
+bool calcul(char left, char right, char oper)
 {
-	if (c == '<')
-	{
+	if (oper == '<')
 		return left < right;
-	}
-	else if (c == '>')
-	{
+	else
 		return left > right;
-	}
-	return false;
 }
-
-void go(string s, int depth)
+void go(string value, int index)
 {
-	if (depth == k + 1)
+	if (index - 1 == k)
 	{
-		cout << s << " " << depth << "\n";
-		ret.push_back(s);
+		ret.push_back(value);
 		return;
 	}
 
-	for (int i = 0; i < 10; ++i)
+	for (int i = 0; i <= 9; ++i)
 	{
-		if (visited[i])continue;
-		if (s.empty() || oper(*(s.end() - 1), i + '0', c[depth -1]))
+		if (visited[i] == 1)continue;
+
+		char right = i + '0';
+		if (value.empty() || calcul(*(value.end() - 1), right, oper[index - 1]))
 		{
-			visited[i] = true;
-			s.push_back(i + '0');
-			go(s, depth + 1);
-			visited[i] = false;
-			s.pop_back();
+			visited[i] = 1;
+			value.push_back(right);
+			go(value, index + 1);
+
+			visited[i] = 0;
+			value.pop_back();
 		}
 	}
 }
@@ -50,11 +45,10 @@ int main()
 	cin >> k;
 	for (int i = 0; i < k; ++i)
 	{
-		cin >> c[i];
+		cin >> oper[i];
 	}
 	go(string(), 0);
 	sort(ret.begin(), ret.end());
-	cout << *(ret.end() - 1) << "\n";
-	cout << *(ret.begin()) << "\n";
-	return 0;
+
+	cout << *(ret.end() - 1) << "\n" << *ret.begin();
 }
