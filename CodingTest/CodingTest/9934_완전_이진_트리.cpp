@@ -6,30 +6,21 @@
 using namespace std;
 
 int k;
-vector<int>v;
+int a[11];
 vector<int> ret[11];
 
-void go(vector<int>v, int level)
+void go(int s_index, int e_index, int level)
 {
-	if (v.size() == 1)
+	if (s_index > e_index) return;
+	if (s_index == e_index)
 	{
-		ret[level].push_back(v[0]);
+		ret[level].push_back(a[s_index]);
 		return;
 	}
-	ret[level].push_back(v[v.size() / 2 ]);
-
-	vector<int>left;
-	vector<int>right;
-	for (int i = 0; i < (int)v.size() / 2; ++i)
-	{
-		left.push_back(v[i]);
-	}
-	for (int i = (int)v.size() / 2 + 1; i < (int)v.size(); ++i)
-	{
-		right.push_back(v[i]);
-	}
-	go(left, level + 1);
-	go(right, level + 1);
+	int mid = (s_index + e_index) / 2;
+	ret[level].push_back(a[mid]);
+	go(s_index, mid - 1, level + 1);
+	go(mid + 1, e_index, level + 1);
 }
 
 int main()
@@ -38,11 +29,9 @@ int main()
 	int depth = pow(2, k) - 1;
 	for (int i = 0; i < depth; ++i)
 	{
-		int temp = 0;
-		cin >> temp;
-		v.push_back(temp);
+		cin >> a[i];
 	}
-	go(v, 0);
+	go(0, depth - 1, 0);
 
 	for (int i = 0; i < k; ++i)
 	{
