@@ -6,7 +6,7 @@
 using namespace std;
 
 int k;
-int a[11];
+int a[1050];
 vector<int> ret[11];
 
 void go(int s_index, int e_index, int level)
