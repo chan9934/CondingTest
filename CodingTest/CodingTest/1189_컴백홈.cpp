@@ -10,15 +10,14 @@ int dx[] = { 0, 1, 0, -1 };
 char a[10][10];
 int visited[10][10];
 
-void go(int y, int x, int cnt)
+int go(int y, int x)
 {
-	if (cnt > k)
+	if (y == 0 && x == c - 1)
 	{
-		return;
-	}
-	if (y == 0 && x == c - 1 && cnt == k)
-	{
-		++ret;
+		if (visited[y][x] == k)
+			return 1;
+		else
+			return 0;
 	}
 	for (int i = 0; i < 4; ++i)
 	{
@@ -29,10 +28,11 @@ void go(int y, int x, int cnt)
 		if (visited[ny][nx]) continue;
 		if (a[ny][nx] == 'T')continue;
 
-		visited[ny][nx] = 1;
-		go(ny, nx, cnt + 1);
+		visited[ny][nx] = visited[y][x] + 1;
+		ret += go(ny, nx);
 		visited[ny][nx] = 0;
 	}
+	return 0;
 }
 int main()
 {
@@ -45,7 +45,7 @@ int main()
 		}
 	}
 	visited[r - 1][0] = 1;
-	go(r - 1, 0, 1);
+	go(r - 1, 0);
 	cout << ret;
 	return 0;
 }
