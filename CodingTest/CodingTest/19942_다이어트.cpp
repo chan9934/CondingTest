@@ -1,13 +1,19 @@
 #include <iostream>
 #include <vector>
+#include <map>
+#include <algorithm>
 
 using namespace std;
 
 int n, ret;
 int mp, mf, ms, mv;
-int a[20][10];
+int b, c, d, e, f;
 
-vector<int> v_ret;
+struct A {
+	int mp, mf, ms, mv, cost;
+} a[16];
+
+map<int, vector<vector<int>>> ret_v;
 
 int main()
 {
@@ -15,7 +21,7 @@ int main()
 	cin >> mp >> mf >> ms >> mv;
 	for (int i = 0; i < n; ++i)
 	{
-		cin >> a[i][0] >> a[i][1] >> a[i][2] >> a[i][3] >> a[i][4];
+		cin >> a[i].mp >> a[i].mf >> a[i].ms >> a[i].mv >> a[i].cost;
 	}
 	int max_n = 10000;
 	ret = max_n;
@@ -30,31 +36,21 @@ int main()
 			}
 		}
 
-		int temp_p = 0, temp_f = 0, temp_s = 0, temp_v = 0, temp_t = 0;
+		b = c = d = e = f = 0;
 		for (auto element : v)
 		{
-			temp_p += a[element][0];
-			temp_f += a[element][1];
-			temp_s += a[element][2];
-			temp_v += a[element][3];
-			temp_t += a[element][4];
+			b += a[element].mp;
+			c += a[element].mf;
+			d += a[element].ms;
+			e += a[element].mv;
+			f += a[element].cost;
 		}
-		if (temp_p >= mp && temp_f >= mf && temp_s >= ms && temp_v >= mv)
+		if (b >= mp && c >= mf && d >= ms && e >= mv)
 		{
-			if (ret >= temp_t)
+			if (ret >= f)
 			{
-				if (ret == temp_t)
-				{
-					if (v < v_ret)
-					{
-						v_ret = v;
-					}
-				}
-				else
-				{
-					v_ret = v;
-				}
-				ret = min(ret, temp_t);
+				ret = min(ret, f);
+				ret_v[ret].push_back(v);
 			}
 		}
 	}
@@ -65,7 +61,9 @@ int main()
 	else
 	{
 		cout << ret << "\n";
-		for (auto element : v_ret)
+		vector < vector<int>> v = ret_v[ret];
+		sort(v.begin(), v.end());
+		for (auto element : *v.begin())
 		{
 			cout << element + 1 << " ";
 		}
