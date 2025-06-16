@@ -1,3 +1,2 @@
 ﻿  비트마스킹.cpp
-D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\비트마스킹.cpp(14,22): warning C4334: '<<': 32비트 시프트의 결과가 암시적으로 64비트로 변환됩니다. 64비트 시프트를 사용하시겠습니까?
   CodingTest.vcxproj -> D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\x64\Debug\CodingTest.exe
