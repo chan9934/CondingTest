@@ -1,103 +1,50 @@
 #include <iostream>
-#include <vector>
 
 using namespace std;
+int n, ret;
+int a[24];
+string s;
 
-char a[24][24];
-char h[24][24];
-int num_t, n, ret;
-
-void print(const string& s)
+void go(int here)
 {
-	cout << s << "\n";
-	for (int i = 0; i < n; ++i)
+	if (here + 1 > n)
 	{
-		for (int j = 0; j < n; ++j)
+		int sum = 0;
+		for (int i = 1; i <= (1<<n); i *= 2)
 		{
-			cout << a[i][j];
-		}
-		cout <<  "\n";
-	}
-}
-void go()
-{
-	bool next = false;
-	for (int i = 0; i < n; ++i)
-	{
-		int t = 0;
-		for (int j = 0; j < n; ++j)
-		{
-			if (a[i][j] == 'T')
-				++t;
-		}
-		if (t > (n / 2))
-		{
-			next = true;
+			int cnt = 0;
 			for (int j = 0; j < n; ++j)
 			{
-				if (a[i][j] == 'T')
+				if (a[i] & j)
 				{
-					a[i][j] = 'H';
-					--num_t;
-				}
-				else if (a[i][j] == 'H')
-				{
-					a[i][j] = 'T';
-					++num_t;
+					++cnt;
 				}
 			}
+			sum += min(cnt, n - cnt);
 		}
-	}
-	print("vertical");
-	for (int i = 0; i < n; ++i)
-	{
-		int t = 0;
-		for (int j = 0; j < n; ++j)
-		{
-			if (a[j][i] == 'T')
-				++t;
-		}
-		if (t > (n / 2))
-		{
-			next = true;
-			for (int j = 0; j < n; ++j)
-			{
-				if (a[j][i] == 'T')
-				{
-					a[j][i] = 'H';
-					--num_t;
-				}
-				else if (a[j][i] == 'H')
-				{
-					a[j][i] = 'T';
-					++num_t;
-				}
-			}
-		}
-	}
-	print("horizental");
-	if (num_t < 2)
+		ret = min(ret, sum);
 		return;
-	ret = min(ret, num_t);
-
-	if (next)
-		go();
+	}
+	go(here + 1);
+	a[here] = ~a[here];
+	go(here + 1);
 }
 int main()
 {
 	cin >> n;
 	for (int i = 0; i < n; ++i)
 	{
-		for (int j = 0; j < n; ++j)
+		cin >> s;
+		int value = 1;
+		for (int j = 0; j < s.size(); ++j)
 		{
-			cin >> a[i][j];
-			if (a[i][j] == 'T')
-				++num_t;
+			if (s[j] == 'T')
+				a[i] += value;
+			value *= 2;
 		}
 	}
 
-	ret = num_t;
-	go();
+	go(0);
 	cout << ret << "\n";
 	return 0;
 }
