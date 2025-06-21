@@ -11,39 +11,28 @@ void check()
 	{
 		int prev = a[i][0];
 		bool success = true;
-		int cnt = 0;
-		bool slope = false;
+		int cnt = 1;
 		for (int j = 1; j < n; ++j)
 		{
-			int temp = abs(prev - a[i][j]);
+			int temp = prev - a[i][j];
 			if (temp == 0)
 			{
-				if (slope)
-				{
-					if (cnt == 2)
-					{
-						slope = false;
-						cnt = 0;
-					}
-					else
-					{
-						++cnt;
-					}
-				}
+				++cnt;
 			}
-			else if (temp == 1)
+			else if (abs(temp) == 1)
 			{
-				prev = a[i][j];
-				if (!slope)
+				if (temp < 0)
 				{
-					slope = true;
-					++cnt;
+					if (!(cnt >= l))
+					{
+						success = false;
+						break;
+					}
 				}
 				else
 				{
-					success = false;
-					break;
 				}
+				cnt = 1;
 			}
 			else
 			{
