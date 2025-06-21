@@ -2,38 +2,38 @@
 #include <bitset>
 
 using namespace std;
-
-int check;
-char a[24][24];
-int r, c;
+int r, c, ret = 1;
+char a[21][21];
 int dy[] = { -1, 0, 1, 0 };
 int dx[] = { 0, 1, 0, -1 };
 
+int check;
+
 void print_check()
 {
-	cout << bitset<16>(check) << "\n";
+	cout << bitset<8>(check) << "\n";
 }
-
-int go(int y, int x)
+void dfs(int y, int x, int num)
 {
-	int ret = 1;
+	ret = max(ret, num);
 	for (int i = 0; i < 4; ++i)
 	{
 		int ny = y + dy[i];
 		int nx = x + dx[i];
+		if (ny < 0 || nx < 0 || ny >= r || nx >= c) continue;
+		int bit = (a[ny][nx] - (int)('A'));
+		if (check & (1 << bit))continue;
 
-		if (ny < 0 || nx < 0 || ny >= r || nx >= c)continue;
-		if (check & (1 << int(a[ny][nx] - (int)('A'))))continue;
-
-		check |= (1 << int(a[ny][nx] - (int)('A')));
-		print_check();
-		ret += go(ny, nx);
+		check |= (1 << bit);
+		dfs(ny, nx, num + 1);
+		check ^= (1 << bit);
 	}
-	return ret;
 }
+
 int main()
 {
 	cin >> r >> c;
+
 	for (int i = 0; i < r; ++i)
 	{
 		for (int j = 0; j < c; ++j)
@@ -41,8 +41,10 @@ int main()
 			cin >> a[i][j];
 		}
 	}
-	check |= (1 << int(a[0][0] - (int)('A')));
-	print_check();
-	cout << go(0, 0) << "\n";
+	check |= (1 << (a[0][0] - (int)('A')));
+	dfs(0, 0, 1);
+
+	cout << ret << "\n";
 	return 0;
+
 }
