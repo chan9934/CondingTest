@@ -1,87 +1,55 @@
-#include<iostream>
-#include<vector>
-#include<bitset>
-#include<string>
+#include <iostream>
+#include <bitset>
 
 using namespace std;
 
-int n, k, ret, check;
-vector<string >s;
+int n, k, mask;
+string s;
+int worlds[51];
 
-int calcul()
+int count(int mask)
 {
-	int num = 0;
-	for (const string& element_1 : s)
+	int cnt = 0;
+	for (int world : worlds)
 	{
-		bool success = true;
-		for (char element_2 : element_1)
-		{
-			if (check & (1 << (element_2 - 'a')))continue;
-			success = false;
-			break;
-		}
-		if (success) ++num;
+		if (world && (world & mask) == world)cnt++;
 	}
-	return num;
+	return cnt;
 }
-void extract(string& s)
-{
-	s.erase(s.begin(), s.begin() + 4);
-	s.erase(s.end()-4, s.end());
 
-}
-void combi(vector<int>&indecies, int s_i)
+int go(int index, int r, int mask)
 {
-	if (indecies.size() == k)
+	if (r < 0) return 0;
+	if (index == 26) return count(mask);
+	int ret = 0;
+	int bit = 1 << index;
+	if (!(mask & bit))
 	{
-		int temp = check;
-		for (int index : indecies)
-		{
-			int bit = (1 << index);
-			if (check & bit)
-			{
-				check = temp;
-				return;
-			}
-			check |= bit;
-		}
-		ret = max(ret, calcul());
-		check = temp;
-		return;
+		ret = max( ret, go(index + 1, r - 1, mask | bit));
 	}
+	ret = max(ret, go(index + 1, r, mask));
 
-	for (int i = s_i + 1; i < 26; ++i)
-	{
-		indecies.push_back(i);
-		combi(indecies, i);
-		indecies.pop_back();
-	}
+	return ret;
 }
 int main()
 {
 	cin >> n >> k;
-	ret = 0;
-	if (k < 5)
-	{
-		cout << 0 << "\n";
-		return 0;
-	}
-	k -= 5;
-	check |= (1 << ('a' - 'a'));
-	check |= (1 << ('n' - 'a'));
-	check |= (1 << ('t' - 'a'));
-	check |= (1 << ('i' - 'a'));
-	check |= (1 << ('c' - 'a'));
 	for (int i = 0; i < n; ++i)
 	{
-		string temp;
-		cin >> temp;
-		extract(temp);
-		s.push_back(temp);
+		cin >> s;
+		int world = 0;
+		for (char c : s)
+		{
+			world |= (1 <<( c - 'a'));
+		}
+		worlds[i] = world;
+		//cout << bitset<15>(world) << "\n";
 	}
-	vector<int>indecies;
-	combi(indecies, -1);
-
-	cout << ret << "\n";
+	mask |= (1 << ('a' - 'a'));
+	mask |= (1 << ('n' - 'a'));
+	mask |= (1 << ('t' - 'a'));
+	mask |= (1 << ('i' - 'a'));
+	mask |= (1 << ('c' - 'a'));
+	cout << go(0, k - 5, mask) << "\n";
 	return 0;
 }
