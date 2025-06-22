@@ -4,58 +4,46 @@ using namespace std;
 
 int n, l, ret;
 int a[104][104];
+int b[104][104];
 
-void check()
+void check(int a[104][104])
 {
 	for (int i = 0; i < n; ++i)
 	{
-		int prev = a[i][0];
-		bool success = true;
 		int cnt = 1;
-		for (int j = 1; j < n; ++j)
+		bool success = true;
+		for (int j = 0; j < n - 1; ++j)
 		{
-			int temp = prev - a[i][j];
-			if (temp == 0)
+			int temp = a[i][j + 1] - a[i][j];
+			if (temp == 0) ++cnt;
+			else if (temp == 1 && cnt >= l) cnt = 1;// 오르막길
+			else if (temp == -1 && cnt >= 0)cnt = 1 - l;// 내리막길
+			else 
 			{
-				++cnt;
-			}
-			else if (abs(temp) == 1)
-			{
-				if (temp < 0)
-				{
-					if (!(cnt >= l))
-					{
-						success = false;
-						break;
-					}
-				}
-				else
-				{
-				}
-				cnt = 1;
-			}
-			else
-			{
-				success = false;
+				success = false; 
 				break;
 			}
-		}
-		if (success)
-			++ret;
-	}
-}
 
+		}
+		if (!success || cnt < 0)continue;
+		++ret;
+	}
+
+}
 int main()
 {
 	cin >> n >> l;
+
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < n; ++j)
 		{
 			cin >> a[i][j];
+			b[j][i] = a[i][j];
 		}
 	}
-	check();
+	check(a);
+	check(b);
 	cout << ret << "\n";
 	return 0;
 }
