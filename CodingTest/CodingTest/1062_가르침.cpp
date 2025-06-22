@@ -10,7 +10,7 @@ vector<string >s;
 
 int calcul()
 {
-	int num;
+	int num = 0;
 	for (const string& element_1 : s)
 	{
 		bool success = true;
@@ -35,10 +35,9 @@ void combi(vector<int>&indecies, int s_i)
 	if (indecies.size() == k)
 	{
 		int temp = check;
-		int i = 0;
-		for (i; i < indecies.size(); ++i)
+		for (int index : indecies)
 		{
-			int bit = (1 << i);
+			int bit = (1 << index);
 			if (check & bit)
 			{
 				check = temp;
@@ -68,12 +67,11 @@ int main()
 		return 0;
 	}
 	k -= 5;
-	check |= (1 << 'a' - 'a');
-	check |= (1 << 'n' - 'a');
-	check |= (1 << 't' - 'a');
-	check |= (1 << 'i' - 'a');
-	check |= (1 << 'c' - 'a');
-	cout << bitset<26>(check) << "\n";
+	check |= (1 << ('a' - 'a'));
+	check |= (1 << ('n' - 'a'));
+	check |= (1 << ('t' - 'a'));
+	check |= (1 << ('i' - 'a'));
+	check |= (1 << ('c' - 'a'));
 	for (int i = 0; i < n; ++i)
 	{
 		string temp;
