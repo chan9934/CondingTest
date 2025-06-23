@@ -237,6 +237,9 @@
     <ClCompile Include="1062_가르침.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
+    <ClCompile Include="1094_막대기.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
