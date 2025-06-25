@@ -2,54 +2,37 @@
 
 using namespace std;
 
-int n, m, ret_1, ret_2, ret_3;
 int a[51][51];
 int visited[51][51];
-int compSize[2504];
+int component[2504];
+int dy[] = { 0, -1, 0, 1 };
+int dx[] = { -1, 0, 1, 0 };
+int m, n, ret_1, ret_2, ret_3;
 
-pair<int, int> get_direction(int index)
+int dfs(int y, int x, int cnt)
 {
-	if (index == 0)
-	{
-		return { 0, -1 };
-	}
-	else if (index == 1)
-	{
-		return { -1, 0 };
-	}
-	else if (index == 2)
-	{
-		return { 0, 1 };
-	}
-	else
-	{
-		return { 1, 0 };
-	}
-}
-
-int go(int y, int x, int cnt)
-{
-	int target = a[y][x];
-	int ret = 1;
 	visited[y][x] = cnt;
+
+	int ret = 1;
 	for (int i = 0; i < 4; ++i)
 	{
-		if (!(target & (1 << i)))
+		if (a[y][x] & (1 << i))
 		{
-			pair<int, int>p = get_direction(i);
+			int ny = y + dy[i];
+			int nx = x + dx[i];
 
-			int ny = y + p.first;
-			int nx = x + p.second;
-			if (ny < 0 || nx < 0 || ny >= n || nx >= m)continue;
-			if (visited[ny][nx] != 0)continue;
-			ret += go(ny, nx, cnt);
+			if (ny < 0 || nx < 0 || ny >= n || nx >= m) continue;
+			if (visited[ny][nx])continue;
+			ret += dfs(ny, nx, cnt);
 		}
 	}
 	return ret;
 }
+
 int main()
 {
 	cin >> m >> n;
+
 	for (int i = 0; i < n; ++i)
 	{
 		for (int j = 0; j < m; ++j)
@@ -61,12 +44,10 @@ int main()
 	{
 		for (int j = 0; j < m; ++j)
 		{
-			if (visited[i][j] == 0)
-			{
-				++ret_1;
-				compSize[ret_1] = go(i, j, ret_1);
-				ret_2 = max(ret_2, compSize[ret_1]);
-			}
+			if (visited[i][j]) continue;
+			++ret_2;
+			int cnt = dfs(i, j, ret_2);
+			component[ret_2] = cnt;
 		}
 	}
 
@@ -76,26 +57,24 @@ int main()
 		{
 			if (i + 1 < n)
 			{
-				int a = visited[i + 1][j];
-				int b = visited[i][j];
+				int a = visited[i][j];
+				int b = visited[i + 1][j];
 				if (a != b)
 				{
-					ret_3 = max(ret_3, compSize[a] + compSize[b]);
+					ret_3 = max(ret_3, component[a] + component[b]);
 				}
 			}
 			if (j + 1 < m)
 			{
-				int a = visited[i][j + 1];
-				int b = visited[i][j];
+				int a = visited[i][j];
+				int b = visited[i][j + 1];
 				if (a != b)
 				{
-					ret_3 = max(ret_3, compSize[a] + compSize[b]);
+					ret_3 = max(ret_3, component[a] + component[b]);
 				}
 			}
 		}
 	}
-	cout << ret_1 << "\n";
-	cout << ret_2 << "\n";
-	cout << ret_3 << "\n";
+	cout << ret_1 << "\n" << ret_2 << "\n" << ret_3 << "\n";
 	return 0;
 }
