@@ -52,11 +52,18 @@ void bit_check(int x)
 }
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL); cout.tie(NULL);
 	cin >> m;
 
 	for (int i = 0; i < m; ++i)
 	{
-		cin >> oper >> value;
+		cin >> oper;
+		if (oper != "all" && oper != "empty")
+		{
+			cin >> value;
+		}
+
 		if (oper == "add")
 		{
 			bit_add(value);
