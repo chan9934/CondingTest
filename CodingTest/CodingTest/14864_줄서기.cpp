@@ -22,6 +22,6 @@ int main() {
     else {
         for (int i = 1; i <= n; i++) cout << v[i] << " ";
     }
-
+     
     return 0;
 }
