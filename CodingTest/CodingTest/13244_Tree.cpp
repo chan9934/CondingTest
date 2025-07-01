@@ -1,75 +1,52 @@
 #include <iostream>
-#include <set>
+#include <vector>
 
 using namespace std;
 
-int t, n, m, n_f, n_t;
+int t, n, m, a, b, cnt;
 int visited[1004];
-bool ret;
-set<int>v[1004];
-void dfs(int from)
-{
-	visited[from] = 1;
+vector<int>adj[1004];
 
-	for (int next : v[from])
+void dfs(int here)
+{
+	visited[here] = 1;
+
+	for (int next : adj[here])
 	{
 		if (!visited[next])
+		{
 			dfs(next);
+		}
 	}
 }
+
 int main()
 {
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL), cout.tie(NULL);
 	cin >> t;
-
 	for (int i = 0; i < t; ++i)
 	{
-
-		for (int j = 1; j <= n; ++j) {
-			v[j].clear();
-		}
-		fill(&visited[0], &visited[0] + 110, 0);
-		ret = true;
-		cin >> n >> m;
-		int cnt = 0;
-		if(m != n-1)
-		{
-			ret = false;
-		}
-
+		cin >> n;
+		cin >> m;
+		cnt = 0;
+		for (int i = 0; i < 1004; ++i)adj[i].clear();
+		fill(visited, visited + 1004, 0);
 		for (int j = 0; j < m; ++j)
 		{
-			cin >> n_f >> n_t;
-			if(v[n_f].end() == v[n_f].find(n_t))
-			{
-				v[n_f].insert(n_t);
-				v[n_t].insert(n_f);
-			}
-			else
-			{
-				ret = false;
-				continue;
-			}
-		}
-		if (!ret)
-		{
-			cout << "graph" << "\n";
-			continue;
+			cin >> a >> b;
+			adj[a].push_back(b);
+			adj[b].push_back(a);
 		}
 		for (int j = 1; j <= n; ++j)
 		{
 			if (!visited[j])
 			{
-				++cnt;
 				dfs(j);
+				++cnt;
 			}
 		}
-		if (cnt > 1)
-			ret = false;
-		if (ret)
-			cout << "tree" << "\n";
-		else
-		{
-			cout << "graph" << "\n";
-		}
+		if (cnt > 1 || m != n - 1) cout << "graph" << "\n";
+		else cout << "tree" << "\n";
 	}
 }

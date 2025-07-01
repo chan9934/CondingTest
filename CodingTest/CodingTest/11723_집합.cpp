@@ -24,7 +24,7 @@ int main()
 		}
 		else if (strcmp(s, "check") == 0)
 		{
-			printf_s("%d\n", (n & (1 << x - 1) ? 1 : 0));
+			printf("%d\n", (n & (1 << x - 1) ? 1 : 0));
 		}
 		else if (strcmp(s, "toggle") == 0)
 		{
