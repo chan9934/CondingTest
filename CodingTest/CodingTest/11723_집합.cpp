@@ -1,94 +1,43 @@
 #include <iostream>
-
+#include <cstdio>
+#include <cstring>
 using namespace std;
 
+int m, n, x;
 
-int m, s;
+char s[11];
 
-string oper;
-int value;
-void bit_add(int x)
-{
-	int index = x - 1;
-	s |= (1 << index);
-}
-void bit_remove(int x)
-{
-	int index = x - 1;
-	s &= ~(1 << index);
-}
-void bit_toggle(int x)
-{
-	int index = x - 1;
-	s ^= (1 << index);
-}
-void bit_all()
-{
-	static int all_value = 0;
-	if (all_value == 0)
-	{
-		for (int i = 0; i < 20; ++i)
-		{
-			all_value |= (1 << i);
-		}
-	}
-	s = all_value;
-}
-void bit_empty()
-{
-	s = 0;
-}
-void bit_check(int x)
-{
-	int index = x - 1;
-	if (s & (1 << index))
-	{
-		cout << 1 << "\n";
-	}
-	else
-	{
-		cout << 0 << "\n";
-	}
-}
 int main()
 {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL); cout.tie(NULL);
-	cin >> m;
-
+	scanf("%d", &m);
 	for (int i = 0; i < m; ++i)
 	{
-		cin >> oper;
-		if (oper != "all" && oper != "empty")
+		scanf("%s %d", &s, &x);
+		
+		if (strcmp(s, "add") == 0)
 		{
-			cin >> value;
+			n |= (1 << (x - 1));
+		}
+		else if (strcmp(s, "remove") == 0)
+		{
+			n &= ~(1 << (x - 1));
+		}
+		else if (strcmp(s, "check") == 0)
+		{
+			printf_s("%d\n", (n & (1 << x - 1) ? 1 : 0));
+		}
+		else if (strcmp(s, "toggle") == 0)
+		{
+			n ^= (1 << (x - 1));
+		}
+		else if (strcmp(s, "all") == 0)
+		{
+			n = (1 << 20) - 1;
+		}
+		else if (strcmp(s, "empty") == 0)
+		{
+			n = 0;
 		}
 
-		if (oper == "add")
-		{
-			bit_add(value);
-		}
-		else if (oper == "remove")
-		{
-			bit_remove(value);
-
-		}
-		else if (oper == "check")
-		{
-			bit_check(value);
-		}
-		else if (oper == "toggle")
-		{
-			bit_toggle(value);
-		}
-		else if (oper == "all")
-		{
-			bit_all();
-		}
-		else if (oper == "empty")
-		{
-			bit_empty();
-		}
 	}
-	return 0;
 }
