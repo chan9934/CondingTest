@@ -8,25 +8,21 @@ int n, m, max_ret;
 int a[5][5];
 char c;
 
-void go(int s[5], int cnt)
+void go()
 {
-	if (cnt == n)
+	for (int s = 0; s < (1 << n * m); ++s)
 	{
 		int temp = 0;
 		int ret = 0;
-		/*cout << " °í°í°í " << "\n";
 		for (int i = 0; i < n; ++i)
 		{
-			cout << bitset<4>(s[i]) << "\n";
-		}*/
-		for (int i = 0; i < n; ++i)
-		{
-			for (int j = m - 1; j >= 0; --j)
+			for (int j = 0; j < m; ++j)
 			{
-				if (s[i] & (1 << j))
+				int k = i * m + j;
+				if (s & (1 << k))
 				{
 					temp *= 10;
-					temp += a[i][m - j - 1];
+					temp += a[i][j];
 				}
 				else
 				{
@@ -37,15 +33,12 @@ void go(int s[5], int cnt)
 			ret += temp;
 			temp = 0;
 		}
-
-		//cout << ret << "\n";
-
-
 		for (int i = 0; i < m; ++i)
 		{
 			for (int j = 0; j < n; ++j)
 			{
-				if (!(s[j] & (1 << (m - i - 1))))
+				int k = j * m + i;
+				if (!(s & (1 << k)))
 				{
 					temp *= 10;
 					temp += a[j][i];
@@ -60,15 +53,9 @@ void go(int s[5], int cnt)
 			ret += temp;
 			temp = 0;
 		}
-		//cout << ret << "\n";
 		max_ret = max(max_ret, ret);
-		return;
 	}
-	for (int i = 0; i < (1 << m); ++i)
-	{
-		s[cnt] = i;
-		go(s, cnt + 1);
-	}
+	return;
 }
 
 int main()
@@ -83,8 +70,7 @@ int main()
 			a[i][j] = ((int)(c)-'0');
 		}
 	}
-	int s[5];
-	go(s, 0);
+	go();
 	cout << max_ret << "\n";
 	return 0;
 }
