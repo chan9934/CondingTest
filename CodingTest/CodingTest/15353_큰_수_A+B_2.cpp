@@ -1,42 +1,30 @@
 #include <iostream>
-#include <stack>
 
 using namespace std;
 
-stack<char>ret;
-string a, b;
+string a, b, ret;
+int sum;
 
 int main()
 {
 	cin >> a >> b;
-	if (b.size() > a.size())
-	{
-		swap(a, b);
-	}
-	int size = a.size();
-	int depth = size - b.size();
-	int add_value = 0;
-	int value = 0;
-	for (int i = size - 1; i >= 0; --i)
-	{
-		if(i - depth >= 0)
-		{
-			value = (a[i] - '0') + (b[i - depth] - '0') + add_value;
-		}
-		else
-		{
-			value = (a[i] - '0') + add_value;
-		}
-		add_value = value/10;
-		ret.push((value % 10 + '0'));
-	}
-	if(add_value != 0)
-		ret.push((add_value + '0'));
 
-	while (ret.size())
+	while (a.size() || b.size() || sum)
 	{
-		cout << ret.top();
-		ret.pop();
+		if (a.size())
+		{
+			sum += (a.back() - '0');
+			a.pop_back();
+		}
+		if (b.size())
+		{
+			sum += (b.back() - '0');
+			b.pop_back();
+		}
+		ret += ((sum % 10) + '0');
+		sum /= 10;
 	}
+	reverse(ret.begin(), ret.end());
+	cout << ret << "\n";
 	return 0;
 }
