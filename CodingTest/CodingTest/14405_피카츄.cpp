@@ -3,35 +3,21 @@
 
 using namespace std;
 
-string n;
 string s;
+int flag;
 int main()
 {
-	cin >> n;
-	for (int i = 0; i < n.size(); ++i)
+	cin >> s;
+	for (int i = 0; i < s.size(); ++i)
 	{
-		s += n[i];
-		if (s == "pi")
-		{
-			s = "";
-		}
-		else if(s == "ka")
-		{
-			s = "";
-		}
-		else if(s == "chu")
-		{
-			s = "";
-		}
+		if (i < s.size() - 1 && (s.substr(i, 2) == "pi" || s.substr(i, 2) == "ka")) i += 1;
+		else if (i < s.size() - 2 && (s.substr(i, 3) == "chu")) i += 2;
 		else
 		{
-			if (s.size() > 3)
-			{
-				break;
-			}
+			flag = 1; break;
 		}
 	}
-	if (s.empty())
+	if (!flag)
 		cout << "YES" << "\n";
 	else
 		cout << "NO" << "\n";
