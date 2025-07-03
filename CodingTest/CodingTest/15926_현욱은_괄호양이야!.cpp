@@ -4,41 +4,33 @@
 
 using namespace std;
 int a[200004];
-int n, m, max_cnt, cnt;
-char c;
-stack<char>s;
-void change_bit(int index)
-{
-	m |= (1 << index);
-	while ((index != 0) && (m & (1 << index)))
-	{
-		--index;
-	}
-	m |= (1 << index);
-}
+int n, max_cnt, cnt;
+string s;
+stack<int>stk;
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL); cout.tie(NULL);
-	cin >> n;
+	cin >> n >> s;
 
 	for (int i = 0; i < n; ++i)
 	{
-		cin >> c;
-		if (c == ')' && (!s.empty() && s.top() == '('))
+		if (s[i] == '(')
 		{
-			s.pop();
-			change_bit(i);
-
+			stk.push(i);
 		}
 		else
 		{
-			s.push(c);
+			if(!stk.empty())
+			{
+				a[stk.top()] = a[i] = 1;
+				stk.pop();
+			}
 		}
 	}
 	for (int i = 0; i < n; ++i)
 	{
-		if (m & (1 << i))
+		if (a[i] == 1)
 		{
 			++cnt;
 		}
