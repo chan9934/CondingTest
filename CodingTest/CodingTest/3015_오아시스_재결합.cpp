@@ -17,10 +17,10 @@ int main()
 		cin >> a[i];
 	}
 	
-	// Count visible pairs
+	// Count visible pairs 
 	for (int i = 1; i < n; ++i)
 	{
-
+		(a[i - 1] > a[i]) ? ret += 1, b[i] = 1 : ret += b
 	}
 
 	return 0;
