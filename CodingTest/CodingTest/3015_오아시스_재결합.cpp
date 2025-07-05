@@ -1,27 +1,32 @@
 #include <iostream>
+#include <stack>
 
 using namespace std;
 
-int n, ret;
 
-int a[500004], b[500004];
+typedef long long ll;
+ll n, ret, temp;
+
+stack <ll>stk;
 
 int main()
 {
 	// Number of People
 	cin >> n;
 
-	// Add heights to a_array
+	// Sort
 	for (int i = 0; i < n; ++i)
 	{
-		cin >> a[i];
-	}
-	
-	// Count visible pairs 
-	for (int i = 1; i < n; ++i)
-	{
-		(a[i - 1] > a[i]) ? ret += 1, b[i] = 1 : ret += b
+		cin >> temp;
+		while (stk.size() && stk.top() < temp)
+		{
+			ret += 1;
+			stk.pop();
+		}
+		if(stk.size())++ret;
+		stk.push(temp);
 	}
 
+	cout << ret << '\n';
 	return 0;
 }
