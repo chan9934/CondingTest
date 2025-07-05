@@ -1,2 +1,7 @@
-﻿  15926_현욱은_괄호양이야!.cpp
+﻿  3015_오아시스_재결합.cpp
+D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\3015_오아시스_재결합.cpp(29,28): warning C4244: '=': '_Ty2'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\3015_오아시스_재결합.cpp(29,28): warning C4244:         with
+D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\3015_오아시스_재결합.cpp(29,28): warning C4244:         [
+D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\3015_오아시스_재결합.cpp(29,28): warning C4244:             _Ty2=ll
+D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\3015_오아시스_재결합.cpp(29,28): warning C4244:         ]
   CodingTest.vcxproj -> D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\x64\Debug\CodingTest.exe
