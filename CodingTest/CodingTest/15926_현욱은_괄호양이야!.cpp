@@ -34,7 +34,7 @@ int main()
 		{
 			stk.push(i);
 		}
-	}
+	} 
 	ret = max(ret, cnt);
 	cout << ret << "\n";
 	return  0;
