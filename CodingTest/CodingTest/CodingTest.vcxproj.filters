@@ -276,9 +276,6 @@
     <ClCompile Include="1001 A - B.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="Template.cpp">
-      <Filter>소스 파일\Study_Base</Filter>
-    </ClCompile>
     <ClCompile Include="10998 AxB.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
@@ -286,6 +283,12 @@
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="10869 사칙연산.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="10926 물음표 물음표 느낌표.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="18108 1998년생인 내가 태국에서는 2541년생.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
   </ItemGroup>
