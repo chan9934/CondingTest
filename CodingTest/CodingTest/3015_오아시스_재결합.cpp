@@ -1,27 +1,29 @@
 #include <iostream>
 #include <stack>
 
+typedef long long ll;
+
 using namespace std;
 
+ll ret, n, cnt, temp;
 
-typedef long long ll;
-ll n, ret, temp;
-
-stack <pair<ll,ll>>stk;
-
+stack<pair<ll, ll>>stk;
 int main()
 {
-	// Number of People
+	ios_base::sync_with_stdio(false);
+	cin.tie(NULL), cout.tie(NULL);
+	// Input : number of people
 	cin >> n;
 
-	// Sort
+	cnt = 1;
+	// Compute heights
 	for (int i = 0; i < n; ++i)
 	{
-		// add person
+		// Input : height
 		cin >> temp;
-		int cnt = 1;
-		// Stack top is shorter than temp
-		while (stk.size() && stk.top().first <= temp)
+
+		cnt = 1;
+		while (!stk.empty() && stk.top().first <= temp)
 		{
 			ret += stk.top().second;
 			if (stk.top().first == temp)
@@ -34,10 +36,10 @@ int main()
 			}
 			stk.pop();
 		}
-		if(stk.size())++ret;
-		stk.push({temp, cnt});
+		if (!stk.empty())
+			++ret;
+		stk.push({ temp ,cnt });
 	}
-
-	cout << ret << '\n';
+	cout << ret;
 	return 0;
 }
