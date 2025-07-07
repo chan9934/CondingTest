@@ -3,39 +3,43 @@
 
 using namespace std;
 
-int n, ret;
-string s;
 stack<int> stk;
+string s;
+int n, ret;
 int main()
 {
-	ios_base::sync_with_stdio(false);
-	cin.tie(NULL), cout.tie(NULL);
-	// input string length
-	cin >> n;
 
-	// input string
-	cin >> s;
-	// count max ret
-	int cnt = 0;
+	// Input : length and string
+	cin >> n >> s;
+
+	// initialize base index for valid substring
+	stk.push(-1);
+	// Calculate max ret
 	for (int i = 0; i < n; ++i)
 	{
-		if (stk.empty() && (s[i] == ')'))
+		if (s[i] == '(')
 		{
-			ret = max(ret, cnt);
-			cnt = 0;
-			continue;
+			// push index of opening bracket
+			stk.push('(');
 		}
-		if ((s[i] == ')') && !stk.empty())
+		else
 		{
-			cnt += 2;
+			// pop the matching opening bracket
 			stk.pop();
+			if (!stk.empty())
+			{
+				// update max valid length
+				ret = max(ret, i - stk.top());
+			}
+			else
+			{
+				// no base index, set current as new base
+				stk.push(i);
+			}
 		}
-		else if(s[i] == '(')
-		{
-			stk.push(i);
-		}
-	} 
-	ret = max(ret, cnt);
+	}
+
+	// output the result
 	cout << ret << "\n";
-	return  0;
+	return 0;
 }
