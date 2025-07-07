@@ -267,6 +267,24 @@
     <ClCompile Include="3015_오아시스_재결합.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
+    <ClCompile Include="2557 Hello World.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="1000 A + B.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="1001 A - B.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="Template.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="10998 AxB.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="1008 A\1008 A 나누기 B.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
