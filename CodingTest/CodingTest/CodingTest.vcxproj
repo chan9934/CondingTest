@@ -143,6 +143,10 @@
     <ClCompile Include="1012_유기농_배추.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="10171 고양이.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="10430 나머지.cpp">
       <SubType>
       </SubType>
