@@ -192,6 +192,10 @@
     <ClCompile Include="10998 AxB.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="11021 A+B - 7.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="11382 꼬마 정민.cpp">
       <SubType>
       </SubType>
@@ -267,6 +271,7 @@
     <ClCompile Include="15552 빠른 A+B.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="15684_사다리_조작.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
