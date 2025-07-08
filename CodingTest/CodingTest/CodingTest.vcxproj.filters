@@ -360,6 +360,9 @@
     <ClCompile Include="10952 A+B - 5.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10951 A+B - 4.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
