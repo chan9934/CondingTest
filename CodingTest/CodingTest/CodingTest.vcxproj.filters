@@ -18,9 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\BOJ\11720_숫자의_합.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="Recursive.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
@@ -356,6 +353,12 @@
     </ClCompile>
     <ClCompile Include="2439 별 찍기 - 2.cpp">
       <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\BOJ\11720_숫자의_합.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="10952 A+B - 5.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
