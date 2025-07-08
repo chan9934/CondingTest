@@ -197,7 +197,9 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="11022 A+B - 8.cpp" />
+    <ClCompile Include="11022 A+B - 8.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="11382 꼬마 정민.cpp">
       <SubType>
       </SubType>
@@ -330,6 +332,10 @@
     </ClCompile>
     <ClCompile Include="2309_일곱_난쟁이.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2438 별 찍기 - 1.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="2468_안전_영역.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
