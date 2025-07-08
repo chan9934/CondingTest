@@ -151,6 +151,7 @@
     <ClCompile Include="10172 개.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10430 나머지.cpp">
       <SubType>
@@ -220,6 +221,10 @@
     </ClCompile>
     <ClCompile Include="1325_효율적인_해킹.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1330_두 수 비교하기.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="13913_숨바꼭질_4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
