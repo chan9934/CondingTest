@@ -352,7 +352,10 @@
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="2438 별 찍기 - 1.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2439 별 찍기 - 2.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
