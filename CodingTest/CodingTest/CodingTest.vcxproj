@@ -195,7 +195,9 @@
     <ClCompile Include="11021 A+B - 7.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="11022 A+B - 8.cpp" />
     <ClCompile Include="11382 꼬마 정민.cpp">
       <SubType>
       </SubType>
