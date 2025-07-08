@@ -339,6 +339,11 @@
     <ClCompile Include="25304 영수증.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="25314 코딩은 체육과목 입니다.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="2557 Hello World.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
