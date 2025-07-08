@@ -167,6 +167,10 @@
     <ClCompile Include="10709_기상캐스터.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="10807 개수 세기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="10808_알파벳_개수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -189,6 +193,7 @@
     <ClCompile Include="10951 A+B - 4.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10952 A+B - 5.cpp">
       <SubType>
