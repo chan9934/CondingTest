@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
@@ -23,7 +24,7 @@ int main()
 	{
 		cin >> b >> c;
 		reverse(a + b, a + c + 1);
-		print();
 	}
+	print();
 	return 0;
 }
