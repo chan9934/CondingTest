@@ -447,6 +447,7 @@
     <ClCompile Include="2743  단어 길이 재기cpp.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2753 윤년.cpp">
       <SubType>
@@ -522,6 +523,10 @@
     </ClCompile>
     <ClCompile Include="9012_괄호.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="9086 문자열.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="9375_패션왕_신해빈.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
