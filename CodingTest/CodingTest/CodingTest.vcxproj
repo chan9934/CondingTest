@@ -183,6 +183,7 @@
     <ClCompile Include="10811 바구니 뒤집기.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10813 공 바꾸기.cpp">
       <SubType>
@@ -310,6 +311,10 @@
     </ClCompile>
     <ClCompile Include="15353_큰_수_A+B_2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1546 평균.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="15552 빠른 A+B.cpp">
       <SubType>
