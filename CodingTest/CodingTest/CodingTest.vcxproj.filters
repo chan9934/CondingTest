@@ -420,6 +420,9 @@
     <ClCompile Include="2908 상수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="5622 다이얼.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
