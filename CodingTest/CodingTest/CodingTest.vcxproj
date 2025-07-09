@@ -462,6 +462,10 @@
     <ClCompile Include="3015_오아시스_재결합.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="3052 나머지.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="3197_백조의_호수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -489,6 +493,7 @@
     <ClCompile Include="5597 과제 안 내신 분.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="8393 합.cpp">
       <SubType>
