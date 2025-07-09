@@ -250,6 +250,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="1152 단어의 개수.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="1159_농구_경기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -457,6 +461,7 @@
     <ClCompile Include="2675 문자열 반복.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2739 구구단.cpp">
       <SubType>
