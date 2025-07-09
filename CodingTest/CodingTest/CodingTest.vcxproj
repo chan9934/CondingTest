@@ -175,6 +175,10 @@
     <ClCompile Include="10808_알파벳_개수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="10810 공 넣기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="10818 최소, 최대.cpp">
       <SubType>
       </SubType>
@@ -403,6 +407,7 @@
     <ClCompile Include="2562 최댓값.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2583_영역_구하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
