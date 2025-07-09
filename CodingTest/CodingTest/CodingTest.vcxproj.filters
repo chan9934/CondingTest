@@ -405,6 +405,9 @@
     <ClCompile Include="11654 아스키 코드.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11720 숫자의 합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
