@@ -175,6 +175,10 @@
     <ClCompile Include="10808_알파벳_개수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="10809 알파벳 찾기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="10810 공 넣기.cpp">
       <SubType>
       </SubType>
@@ -259,6 +263,7 @@
     <ClCompile Include="11720 숫자의 합.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="11723_집합.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
