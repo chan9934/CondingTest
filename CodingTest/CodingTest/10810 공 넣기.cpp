@@ -17,7 +17,7 @@ int main()
 	}
 	for (int r = 1; r <= n; ++r)
 	{
-		cout << ret[i] << " ";
+		cout << ret[r] << " ";
 	}
 	return 0;
 }
