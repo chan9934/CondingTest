@@ -444,6 +444,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2743  단어 길이 재기cpp.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="2753 윤년.cpp">
       <SubType>
       </SubType>
@@ -452,6 +456,7 @@
     <ClCompile Include="27866 문자와 문자열.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2828_사과_담기_게임.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
