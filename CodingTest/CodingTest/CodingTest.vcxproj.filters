@@ -435,6 +435,9 @@
     <ClCompile Include="2444 별 찍기 - 7e.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10988 팰린드롬인지 확인하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
