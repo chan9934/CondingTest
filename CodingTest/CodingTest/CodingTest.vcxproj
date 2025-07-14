@@ -413,6 +413,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2444 별 찍기 - 7e.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="2468_안전_영역.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -528,7 +532,9 @@
     <ClCompile Include="3197_백조의_호수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="3303 킹, 퀸, 룩, 비숍, 나이트, 폰 .cpp" />
+    <ClCompile Include="3303 킹, 퀸, 룩, 비숍, 나이트, 폰 .cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="3474_교수가_된_현우.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
