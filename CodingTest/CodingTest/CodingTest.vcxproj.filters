@@ -426,17 +426,20 @@
     <ClCompile Include="11720 숫자의 합.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="25083_새싹.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="3303 킹, 퀸, 룩, 비숍, 나이트, 폰 .cpp">
+    <ClCompile Include="1157 단어 공부.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="2444 별 찍기 - 7e.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="3303 킹, 퀸, 룩, 비숍, 나이트, 폰 .cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="10988 팰린드롬인지 확인하기.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="25083_새싹.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
