@@ -421,6 +421,7 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="25083_새싹.cpp" />
     <ClCompile Include="2525 오븐 시계.cpp">
       <SubType>
       </SubType>

@@ -390,40 +390,43 @@
     <ClCompile Include="10952 A+B - 5.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="1546 평균.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="27866 문자와 문자열.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2743  단어 길이 재기cpp.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9086 문자열.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11654 아스키 코드.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11720 숫자의 합.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10809 알파벳 찾기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2675 문자열 반복.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="1152 단어의 개수.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="1546 평균.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2675 문자열 반복.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2743  단어 길이 재기cpp.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="2908 상수.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="5622 다이얼.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="9086 문자열.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="10809 알파벳 찾기.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="11654 아스키 코드.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="11718 그대로 출력하기.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="11720 숫자의 합.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="25083_새싹.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
