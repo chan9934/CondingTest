@@ -1,2 +1,4 @@
-﻿  1157 단어 공부.cpp
+﻿  2941 크로아티아 알파벳.cpp
+D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\2941 크로아티아 알파벳.cpp(14,22): warning C4267: '-=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\CodingTest\2941 크로아티아 알파벳.cpp(19,16): warning C4267: '=': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
   CodingTest.vcxproj -> D:\Study\BackJoon\coding-test-template\coding-test\CodingTest\x64\Debug\CodingTest.exe
