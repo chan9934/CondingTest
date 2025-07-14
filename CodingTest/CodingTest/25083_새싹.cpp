@@ -3,13 +3,14 @@
 
 using namespace std;
 
-string s;
 
 int main()
 {
-	while (getline(cin, s))
-	{
-		cout << s << "\n";
-	}
+	cout << "         ,r'\"7 " << "\n";
+	cout << "r`-_   ,'  ,/ " << "\n";
+	cout << " \\. \". L_r' " << "\n";
+	cout << "   `~\\/ " << "\n";
+	cout << "      | " << "\n";
+	cout << "      | " << "\n";
 	return 0;
 }

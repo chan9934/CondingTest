@@ -429,6 +429,9 @@
     <ClCompile Include="25083_새싹.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3303 킹, 퀸, 룩, 비숍, 나이트, 폰 .cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">

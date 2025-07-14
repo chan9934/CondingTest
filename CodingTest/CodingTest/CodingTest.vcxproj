@@ -421,7 +421,9 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="25083_새싹.cpp" />
+    <ClCompile Include="25083_새싹.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="2525 오븐 시계.cpp">
       <SubType>
       </SubType>
@@ -526,6 +528,7 @@
     <ClCompile Include="3197_백조의_호수.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="3303 킹, 퀸, 룩, 비숍, 나이트, 폰 .cpp" />
     <ClCompile Include="3474_교수가_된_현우.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
