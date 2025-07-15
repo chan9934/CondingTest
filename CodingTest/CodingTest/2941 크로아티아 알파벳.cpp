@@ -1,42 +1,37 @@
 #include <iostream>
+#include <algorithm>
 
 using namespace std;
 
-string s;
 int ret;
+string s;
 
-void removestr(const string& str, size_t& offset)
+void substract(const string& str)
 {
-	size_t temp = s.find(str, offset);
-	if (temp != string::npos)
-	{
-		offset = temp + 2;
-		ret -= (str.size() - 1);
-	}
-}
-void check(string str)
-{
-	ret = str.size();
-	size_t offset = 0;
 	while (true)
 	{
-		int temp = ret;
-		removestr("c=", offset);
-		removestr("c-", offset);
-		removestr("dz=", offset);
-		removestr("d-", offset);
-		removestr("lj", offset);
-		removestr("nj", offset);
-		removestr("s=", offset);
-		removestr("z=", offset);
-		if (temp == ret)
+		size_t temp = s.find(str);
+		if (temp == string::npos)
+		{
 			return;
+		};
+		s.replace(s.begin() + temp, s.begin() + temp + size(str), "#");
 	}
 }
+
 int main()
 {
 	cin >> s;
-	check(s);
-	cout << ret << "\n";
+
+	substract("c=");
+	substract("c-");
+	substract("dz=");
+	substract("d-");
+	substract("lj");
+	substract("nj");
+	substract("s=");
+	substract("z=");
+
+	cout << size(s) << "\n";
 	return 0;
 }
