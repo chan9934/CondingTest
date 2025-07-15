@@ -307,6 +307,7 @@
     <ClCompile Include="1316 그룹 단어 체커.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="13244_Tree.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -442,6 +443,10 @@
     </ClCompile>
     <ClCompile Include="25083_새싹.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="25206 너의 평점은.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="2525 오븐 시계.cpp">
       <SubType>

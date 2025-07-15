@@ -447,6 +447,9 @@
     <ClCompile Include="1316 그룹 단어 체커.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="25206 너의 평점은.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
