@@ -478,6 +478,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2566 최댓값.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="2583_영역_구하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -500,6 +504,7 @@
     <ClCompile Include="2738 행렬 덧셈.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2739 구구단.cpp">
       <SubType>
