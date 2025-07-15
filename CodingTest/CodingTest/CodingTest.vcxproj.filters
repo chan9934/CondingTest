@@ -456,6 +456,9 @@
     <ClCompile Include="2566 최댓값.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10798 세로읽기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">

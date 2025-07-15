@@ -167,6 +167,10 @@
     <ClCompile Include="10709_기상캐스터.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="10798 세로읽기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="10807 개수 세기.cpp">
       <SubType>
       </SubType>
@@ -481,6 +485,7 @@
     <ClCompile Include="2566 최댓값.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2583_영역_구하기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
