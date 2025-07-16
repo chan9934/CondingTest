@@ -468,6 +468,9 @@
     <ClCompile Include="11005 진법 변환 2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="2720 세탁소 사장 동혁.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">

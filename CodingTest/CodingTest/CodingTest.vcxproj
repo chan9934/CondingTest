@@ -250,6 +250,7 @@
     <ClCompile Include="11005 진법 변환 2.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="11021 A+B - 7.cpp">
       <SubType>
@@ -515,6 +516,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2720 세탁소 사장 동혁.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="2738 행렬 덧셈.cpp">
       <SubType>
