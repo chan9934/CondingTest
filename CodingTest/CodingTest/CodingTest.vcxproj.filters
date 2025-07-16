@@ -426,9 +426,6 @@
     <ClCompile Include="11720 숫자의 합.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="1157 단어 공부.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="2444 별 찍기 - 7e.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
@@ -441,23 +438,29 @@
     <ClCompile Include="25083_새싹.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="2941 크로아티아 알파벳.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="25206 너의 평점은.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="1157 단어 공부.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="1316 그룹 단어 체커.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="25206 너의 평점은.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2738 행렬 덧셈.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="2566 최댓값.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2738 행렬 덧셈.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2941 크로아티아 알파벳.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="10798 세로읽기.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2563 색종이.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
