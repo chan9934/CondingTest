@@ -12,11 +12,12 @@ int main()
 	for (int i = 0; i < (int)n.size(); ++i)
 	{
 		int temp = 0;
-		if (n[(int)n.size() - 1 - i] >= 'A')
-			temp = n[(int)n.size() - 1 - i] - 'A' + 10;
+		if (n[i] >= 'A')
+			temp = n[i] - 'A' + 10;
 		else
-			temp = n[(int)n.size() - 1 - i] - '0';
-		ret += temp * pow(b, i);
+			temp = n[i] - '0';
+		ret *= b;
+		ret += temp;
 	}
 	cout << ret << "\n";
 	return 0;
