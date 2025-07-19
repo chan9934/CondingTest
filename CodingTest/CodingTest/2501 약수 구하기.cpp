@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int n, k;
+
+int main()
+{
+	cin >> n >> k;
+	for (int i = 1; i <= n; ++i)
+	{
+		if (n % i == 0) --k;
+		if (k == 0)
+		{
+			cout << i << "\n";
+			break;
+		}
+	}
+	if (k != 0)
+	{
+		cout << 0 << "\n";
+	}
+	return 0;
+}
