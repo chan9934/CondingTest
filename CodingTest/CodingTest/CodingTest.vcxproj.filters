@@ -513,6 +513,9 @@
     <ClCompile Include="15894 수학은 체육과목 입니다.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="9063 대지.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
