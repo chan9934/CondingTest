@@ -504,6 +504,9 @@
     <ClCompile Include="27323 직사각형.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1085 직사각형에서 탈출.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
