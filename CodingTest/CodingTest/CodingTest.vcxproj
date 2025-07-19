@@ -278,6 +278,10 @@
     <ClCompile Include="1159_농구_경기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="11653 소인수분해.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="11654 아스키 코드.cpp">
       <SubType>
       </SubType>
@@ -344,6 +348,7 @@
     <ClCompile Include="2581 소수.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClInclude Include="14502_연구소.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>

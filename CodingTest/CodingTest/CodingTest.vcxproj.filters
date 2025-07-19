@@ -498,6 +498,9 @@
     <ClCompile Include="2581 소수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11653 소인수분해.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
