@@ -208,6 +208,7 @@
     <ClCompile Include="1085 직사각형에서 탈출.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10869 사칙연산.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -628,6 +629,10 @@
     </ClCompile>
     <ClCompile Include="2979_트럭_주차.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="3009 네 번째 점.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="3015_오아시스_재결합.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
