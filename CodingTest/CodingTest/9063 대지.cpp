@@ -19,5 +19,5 @@ int main()
 		max_y = max(max_y, y1);
 	}
 	cout << (max_x - min_x) * (max_y - min_y) << "\n";
-	return 0;
+	return 0;คน
 }
