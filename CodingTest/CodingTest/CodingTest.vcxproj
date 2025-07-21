@@ -379,6 +379,11 @@
     <ClCompile Include="24264 알고리즘 수업 - 알고리즘의 수행 시간 3.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="24265 알고리즘 수업 - 알고리즘의 수행 시간 4.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="2581 소수.cpp">
       <SubType>
