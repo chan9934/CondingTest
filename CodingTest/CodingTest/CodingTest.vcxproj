@@ -356,6 +356,7 @@
     <ClCompile Include="14215 세 막대.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="1436_영화감독_숌.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -364,6 +365,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="24262 알고리즘 수업 - 알고리즘의 수행 시간 1.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="2581 소수.cpp">
       <SubType>
