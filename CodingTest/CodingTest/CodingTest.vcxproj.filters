@@ -465,56 +465,59 @@
     <ClCompile Include="2745 진법 변환.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="11005 진법 변환 2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2720 세탁소 사장 동혁.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2903 중앙 이동 알고리즘.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2292 벌집.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="1085 직사각형에서 탈출.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="1193 분수찾기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2869 달팽이는 올라가고 싶다.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="5086 배수와 약수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2501 약수 구하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9506 약수들의 합.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="1978 소수 찾기.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2292 벌집.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2501 약수 구하기.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="2581 소수.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="11653 소인수분해.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="2720 세탁소 사장 동혁.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="27323 직사각형.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="2869 달팽이는 올라가고 싶다.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="1085 직사각형에서 탈출.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="2903 중앙 이동 알고리즘.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="3009 네 번째 점.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="15894 수학은 체육과목 입니다.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="5086 배수와 약수.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="9063 대지.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="9506 약수들의 합.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="11005 진법 변환 2.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="11653 소인수분해.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="15894 수학은 체육과목 입니다.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="27323 직사각형.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="10101 삼각형 외우기.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

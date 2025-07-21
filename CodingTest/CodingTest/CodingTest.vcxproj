@@ -140,6 +140,10 @@
     <ClCompile Include="1008 A\1008 A 나누기 B.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="10101 삼각형 외우기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="1012_유기농_배추.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
