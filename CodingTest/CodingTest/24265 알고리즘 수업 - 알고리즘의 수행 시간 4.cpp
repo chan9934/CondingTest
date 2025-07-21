@@ -2,7 +2,7 @@
 
 using namespace std;
 
-int n, ret;
+long long n, ret;
 
 int main()
 {
