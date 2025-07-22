@@ -158,6 +158,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="1018 체스판 다시 칠하기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="10430 나머지.cpp">
       <SubType>
       </SubType>
@@ -369,6 +373,7 @@
     <ClCompile Include="19532 수학은 비대면강의입니다.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2231 분해합.cpp">
       <SubType>
