@@ -519,31 +519,34 @@
     <ClCompile Include="10101 삼각형 외우기.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
+    <ClCompile Include="24313 알고리즘 수업 - 점근적 표기 1.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
     <ClCompile Include="5073 삼각형과 세 변.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="14215 세 막대.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="24262 알고리즘 수업 - 알고리즘의 수행 시간 1.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="24263 알고리즘 수업 - 알고리즘의 수행 시간 2.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="24264 알고리즘 수업 - 알고리즘의 수행 시간 3.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="24265 알고리즘 수업 - 알고리즘의 수행 시간 4.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="24266 알고리즘 수업 - 알고리즘의 수행 시간 5.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="24267 알고리즘 수업 - 알고리즘의 수행 시간 6.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="24313 알고리즘 수업 - 점근적 표기 1.cpp">
+    <ClCompile Include="2798 블랙잭.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

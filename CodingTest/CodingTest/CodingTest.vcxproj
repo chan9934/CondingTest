@@ -399,6 +399,7 @@
     <ClCompile Include="24313 알고리즘 수업 - 점근적 표기 1.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2581 소수.cpp">
       <SubType>
@@ -638,6 +639,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="2798 블랙잭.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="2828_사과_담기_게임.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
