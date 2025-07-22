@@ -366,6 +366,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2231 분해합.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="24262 알고리즘 수업 - 알고리즘의 수행 시간 1.cpp">
       <SubType>
       </SubType>
@@ -643,6 +647,7 @@
     <ClCompile Include="2798 블랙잭.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="2828_사과_담기_게임.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
