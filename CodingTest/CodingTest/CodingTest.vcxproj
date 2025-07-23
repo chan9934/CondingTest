@@ -306,6 +306,7 @@
     <ClCompile Include="11651 좌표 정렬하기 2.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="11653 소인수분해.cpp">
       <SubType>
@@ -332,6 +333,10 @@
     </ClCompile>
     <ClCompile Include="11723_집합.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1181 단어 정렬.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="1189_컴백홈.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
