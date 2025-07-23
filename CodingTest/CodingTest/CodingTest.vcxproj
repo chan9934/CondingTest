@@ -262,6 +262,7 @@
     <ClCompile Include="10989 수 정렬하기 3.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10998 AxB.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
@@ -366,6 +367,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1427 소트인사이드.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="1436 영화감독 숌.cpp">
       <SubType>
