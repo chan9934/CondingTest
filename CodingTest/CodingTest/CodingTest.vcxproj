@@ -298,6 +298,11 @@
     <ClCompile Include="1159_농구_경기.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="11650 좌표 정렬하기.cpp">
+      <SubType>
+      </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+    </ClCompile>
     <ClCompile Include="11653 소인수분해.cpp">
       <SubType>
       </SubType>
@@ -371,6 +376,7 @@
     <ClCompile Include="1427 소트인사이드.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="1436 영화감독 숌.cpp">
       <SubType>
