@@ -161,6 +161,7 @@
     <ClCompile Include="1018 체스판 다시 칠하기.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10430 나머지.cpp">
       <SubType>
@@ -361,6 +362,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1436 영화감독 숌.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="1436_영화감독_숌.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
