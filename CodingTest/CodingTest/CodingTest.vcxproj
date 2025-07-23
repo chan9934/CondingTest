@@ -650,6 +650,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="2750 수 정렬하기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="2753 윤년.cpp">
       <SubType>
       </SubType>
@@ -828,6 +832,7 @@
     <ClCompile Include="2839 설탕 배달 .cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="순열.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
