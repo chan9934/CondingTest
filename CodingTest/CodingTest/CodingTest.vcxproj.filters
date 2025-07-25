@@ -597,6 +597,9 @@
     <ClCompile Include="18870 좌표 압축.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="10815 숫자 카드.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
