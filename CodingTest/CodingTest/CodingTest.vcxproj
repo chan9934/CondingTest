@@ -213,6 +213,7 @@
     <ClCompile Include="10814 나이순 정렬.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="10818 최소, 최대.cpp">
       <SubType>
@@ -404,6 +405,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="18870 좌표 압축.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="19532 수학은 비대면강의입니다.cpp">
       <SubType>

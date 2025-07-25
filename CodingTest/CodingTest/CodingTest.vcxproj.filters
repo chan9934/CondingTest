@@ -594,6 +594,9 @@
     <ClCompile Include="10814 나이순 정렬.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="18870 좌표 압축.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
