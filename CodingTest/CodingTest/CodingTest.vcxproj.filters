@@ -546,58 +546,61 @@
     <ClCompile Include="24267 알고리즘 수업 - 알고리즘의 수행 시간 6.cpp">
       <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
-    <ClCompile Include="2798 블랙잭.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2231 분해합.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="19532 수학은 비대면강의입니다.cpp">
-      <Filter>소스 파일</Filter>
+    <ClCompile Include="25305 커트라인.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="1018 체스판 다시 칠하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1436 영화감독 숌.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2839 설탕 배달 .cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2750 수 정렬하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2587 대표값2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="25305 커트라인.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="2751 수 정렬하기 2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="10989 수 정렬하기 3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1427 소트인사이드.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11650 좌표 정렬하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11651 좌표 정렬하기 2.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="1181 단어 정렬.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="1427 소트인사이드.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="1436 영화감독 숌.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2231 분해합.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2587 대표값2.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2750 수 정렬하기.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2751 수 정렬하기 2.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2798 블랙잭.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="2839 설탕 배달 .cpp">
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="10814 나이순 정렬.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="18870 좌표 압축.cpp">
-      <Filter>소스 파일</Filter>
+      <Filter>소스 파일\Study_Base</Filter>
     </ClCompile>
     <ClCompile Include="10815 숫자 카드.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="10989 수 정렬하기 3.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="11650 좌표 정렬하기.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="11651 좌표 정렬하기 2.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="18870 좌표 압축.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="19532 수학은 비대면강의입니다.cpp">
+      <Filter>소스 파일\Study_Base</Filter>
+    </ClCompile>
+    <ClCompile Include="14425 문자열 집합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

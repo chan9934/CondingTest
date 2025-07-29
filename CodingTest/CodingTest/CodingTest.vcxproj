@@ -406,6 +406,10 @@
     <ClCompile Include="1436_영화감독_숌.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="14425 문자열 집합.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="15894 수학은 체육과목 입니다.cpp">
       <SubType>
       </SubType>
