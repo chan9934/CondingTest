@@ -416,6 +416,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="1620 나는야 포켓몬 마스터 이다솜.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="18870 좌표 압축.cpp">
       <SubType>
       </SubType>
@@ -831,6 +835,7 @@
     <ClCompile Include="7785 회사에 있는 사람.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="8393 합.cpp">
       <SubType>
