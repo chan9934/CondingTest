@@ -409,6 +409,7 @@
     <ClCompile Include="14425 문자열 집합.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="15894 수학은 체육과목 입니다.cpp">
       <SubType>
@@ -826,6 +827,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="7785 회사에 있는 사람.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="8393 합.cpp">
       <SubType>
