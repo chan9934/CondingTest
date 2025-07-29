@@ -220,6 +220,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="10816 숫자 카드 2.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="10818 최소, 최대.cpp">
       <SubType>
       </SubType>
@@ -419,6 +423,7 @@
     <ClCompile Include="1620 나는야 포켓몬 마스터 이다솜.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="18870 좌표 압축.cpp">
       <SubType>
