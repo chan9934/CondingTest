@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\2485 \uAC00\uB85C\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\2485 \uAC00\uB85C\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1735 \uBD84\uC218 \uD569.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{5A456C1E-3DD7-4B64-956A-FEC42461F154}|CodingTest\\CodingTest.vcxproj|solutionrelative:CodingTest\\1735 \uBD84\uC218 \uD569.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -63,19 +67,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "2485 \uAC00\uB85C\uC218.cpp",
+              "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\2485 \uAC00\uB85C\uC218.cpp",
+              "RelativeDocumentMoniker": "CodingTest\\2485 \uAC00\uB85C\uC218.cpp",
+              "ToolTip": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\2485 \uAC00\uB85C\uC218.cpp",
+              "RelativeToolTip": "CodingTest\\2485 \uAC00\uB85C\uC218.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-30T11:13:33.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "1735 \uBD84\uC218 \uD569.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1735 \uBD84\uC218 \uD569.cpp",
               "RelativeDocumentMoniker": "CodingTest\\1735 \uBD84\uC218 \uD569.cpp",
               "ToolTip": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1735 \uBD84\uC218 \uD569.cpp",
               "RelativeToolTip": "CodingTest\\1735 \uBD84\uC218 \uD569.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-30T11:03:56.03Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "13241 \uCD5C\uC18C\uACF5\uBC30\uC218.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\13241 \uCD5C\uC18C\uACF5\uBC30\uC218.cpp",
               "RelativeDocumentMoniker": "CodingTest\\13241 \uCD5C\uC18C\uACF5\uBC30\uC218.cpp",
@@ -88,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "1934 \uCD5C\uC18C\uACF5\uBC30\uC218.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1934 \uCD5C\uC18C\uACF5\uBC30\uC218.cpp",
               "RelativeDocumentMoniker": "CodingTest\\1934 \uCD5C\uC18C\uACF5\uBC30\uC218.cpp",
@@ -101,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "11478 \uC11C\uB85C \uB2E4\uB978 \uBD80\uBD84 \uBB38\uC790\uC5F4\uC758 \uAC1C\uC218.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\11478 \uC11C\uB85C \uB2E4\uB978 \uBD80\uBD84 \uBB38\uC790\uC5F4\uC758 \uAC1C\uC218.cpp",
               "RelativeDocumentMoniker": "CodingTest\\11478 \uC11C\uB85C \uB2E4\uB978 \uBD80\uBD84 \uBB38\uC790\uC5F4\uC758 \uAC1C\uC218.cpp",
@@ -114,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "1269 \uB300\uCE6D \uCC28\uC9D1\uD569.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1269 \uB300\uCE6D \uCC28\uC9D1\uD569.cpp",
               "RelativeDocumentMoniker": "CodingTest\\1269 \uB300\uCE6D \uCC28\uC9D1\uD569.cpp",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "7785 \uD68C\uC0AC\uC5D0 \uC788\uB294 \uC0AC\uB78C.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\7785 \uD68C\uC0AC\uC5D0 \uC788\uB294 \uC0AC\uB78C.cpp",
               "RelativeDocumentMoniker": "CodingTest\\7785 \uD68C\uC0AC\uC5D0 \uC788\uB294 \uC0AC\uB78C.cpp",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "1764 \uB4E3\uBCF4\uC7A1.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1764 \uB4E3\uBCF4\uC7A1.cpp",
               "RelativeDocumentMoniker": "CodingTest\\1764 \uB4E3\uBCF4\uC7A1.cpp",
@@ -152,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "10816 \uC22B\uC790 \uCE74\uB4DC 2.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\10816 \uC22B\uC790 \uCE74\uB4DC 2.cpp",
               "RelativeDocumentMoniker": "CodingTest\\10816 \uC22B\uC790 \uCE74\uB4DC 2.cpp",
@@ -164,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "1620 \uB098\uB294\uC57C \uD3EC\uCF13\uBAAC \uB9C8\uC2A4\uD130 \uC774\uB2E4\uC19C.cpp",
               "DocumentMoniker": "D:\\Study\\BackJoon\\coding-test-template\\coding-test\\CodingTest\\CodingTest\\1620 \uB098\uB294\uC57C \uD3EC\uCF13\uBAAC \uB9C8\uC2A4\uD130 \uC774\uB2E4\uC19C.cpp",
               "RelativeDocumentMoniker": "CodingTest\\1620 \uB098\uB294\uC57C \uD3EC\uCF13\uBAAC \uB9C8\uC2A4\uD130 \uC774\uB2E4\uC19C.cpp",
