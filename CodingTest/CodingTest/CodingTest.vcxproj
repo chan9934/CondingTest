@@ -300,6 +300,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="11478 서로 다른 부분 문자열의 개수.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="1152 단어의 개수.cpp">
       <SubType>
       </SubType>
@@ -368,6 +372,7 @@
     <ClCompile Include="1269 대칭 차집합.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="12851_숨바꼭질_2.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>

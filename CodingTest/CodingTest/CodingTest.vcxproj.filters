@@ -618,6 +618,9 @@
     <ClCompile Include="1269 대칭 차집합.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11478 서로 다른 부분 문자열의 개수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
