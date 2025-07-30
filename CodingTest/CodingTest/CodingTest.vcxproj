@@ -303,6 +303,7 @@
     <ClCompile Include="11478 서로 다른 부분 문자열의 개수.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="1152 단어의 개수.cpp">
       <SubType>
@@ -444,6 +445,10 @@
       <SubType>
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="1934 최소공배수.cpp">
+      <SubType>
+      </SubType>
     </ClCompile>
     <ClCompile Include="19532 수학은 비대면강의입니다.cpp">
       <SubType>
