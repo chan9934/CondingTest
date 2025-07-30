@@ -615,6 +615,9 @@
     <ClCompile Include="1764 듣보잡.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="1269 대칭 차집합.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\CodingTest.h">
