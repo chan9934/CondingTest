@@ -8,7 +8,7 @@ int n, t;
 
 const int MAX_N = 1000000;
 bool isPrime[MAX_N + 1];
-bool sieve()
+void sieve()
 {
 	fill(isPrime, isPrime + MAX_N + 1, true);
 	isPrime[0] = false;

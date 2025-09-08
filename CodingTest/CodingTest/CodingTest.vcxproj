@@ -405,6 +405,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="13909 창문 닫기.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="13913_숨바꼭질_4.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -444,6 +448,7 @@
     <ClCompile Include="17103 골드바흐 파티션.cpp">
       <SubType>
       </SubType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="1735 분수 합.cpp">
       <SubType>
