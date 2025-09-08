@@ -441,6 +441,10 @@
       </SubType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="17103 골드바흐 파티션.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="1735 분수 합.cpp">
       <SubType>
       </SubType>
@@ -862,7 +866,7 @@
     <ClCompile Include="4948 베르트랑 공준.cpp">
       <SubType>
       </SubType>
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="4949_균형잡힌_세상.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
