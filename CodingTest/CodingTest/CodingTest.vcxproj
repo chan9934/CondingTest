@@ -840,6 +840,10 @@
     <ClCompile Include="3986_좋은_단어.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="4134 다음 소수.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="4179_불!.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
